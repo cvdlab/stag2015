@@ -1,0 +1,105 @@
+\begin{thebibliography}{\uppercase{PDFJ15b}}
+
+\bibitem[AWW91]{Aiken91thefl}
+\textsc{Aiken A., Williams J.~H., Wimmers}:
+\newblock The fl project: The design of a functional language, 1991.
+
+\bibitem[Bac78]{backus:78}
+\textsc{Backus J.}:
+\newblock Can programming be liberated from the {von Neumann} style?: a
+  functional style and its algebra of programs.
+\newblock \emph{Commun. {ACM} 21}, 8 (1978), 613--641.
+\newblock \href {http://dx.doi.org/http://doi.acm.org/10.1145/359576.359579}
+  {\path{doi:http://doi.acm.org/10.1145/359576.359579}}.
+
+\bibitem[BWW90]{fl-1}
+\textsc{Backus J., Williams J.~H., Wimmers E.~L.}:
+\newblock An introduction to the programming language {FL}.
+\newblock In \emph{Research topics in functional programming}. Addison-Wesley
+  Longman Publishing Co., Inc., Boston, MA, {USA}, 1990, pp.~219--247.
+
+\bibitem[DPS14]{Dicarlo:2014:TNL:2543138.2543294}
+\textsc{Dicarlo A., Paoluzzi A., Shapiro V.}:
+\newblock Linear algebraic representation for topological structures.
+\newblock \emph{Comput. Aided Des. 46} (Jan. 2014), 269--274.
+\newblock URL: \url{http://dx.doi.org/10.1016/j.cad.2013.08.044}, \href
+  {http://dx.doi.org/10.1016/j.cad.2013.08.044}
+  {\path{doi:10.1016/j.cad.2013.08.044}}.
+
+\bibitem[ETSL08]{Eastman:2008:BHG:1796500}
+\textsc{Eastman C., Teicholz P., Sacks R., Liston K.}:
+\newblock \emph{BIM Handbook: A Guide to Building Information Modeling for
+  Owners, Managers, Designers, Engineers and Contractors}.
+\newblock Wiley Publishing, 2008.
+
+\bibitem[GGM12]{6418876}
+\textsc{Gotlib D., Gnat M., Marciniak J.}:
+\newblock The research on cartographical indoor presentation and indoor route
+  modeling for navigation applications.
+\newblock In \emph{Indoor Positioning and Indoor Navigation (IPIN), 2012
+  International Conference on} (Nov 2012), pp.~1--7.
+\newblock \href {http://dx.doi.org/10.1109/IPIN.2012.6418876}
+  {\path{doi:10.1109/IPIN.2012.6418876}}.
+
+\bibitem[HT73]{Hopcroft:1973:AEA:362248.362272}
+\textsc{Hopcroft J., Tarjan R.}:
+\newblock Algorithm 447: Efficient algorithms for graph manipulation.
+\newblock \emph{Commun. ACM 16}, 6 (June 1973), 372--378.
+\newblock URL: \url{http://doi.acm.org/10.1145/362248.362272}, \href
+  {http://dx.doi.org/10.1145/362248.362272} {\path{doi:10.1145/362248.362272}}.
+
+\bibitem[Pao03]{Paoluzzi2003a}
+\textsc{Paoluzzi A.}:
+\newblock \emph{Geometric Programming for Computer Aided Design}.
+\newblock John Wiley \& Sons, Chichester, {UK}, 2003.
+
+\bibitem[PDFJ15a]{cadanda:2015}
+\textsc{Paoluzzi A., DiCarlo A., Furiani F., Jirik M.}:
+\newblock {CAD} models from medical images using {LAR}.
+\newblock \emph{Computer-Aided Design and Applications 13} (2015).
+\newblock To appear.
+
+\bibitem[PDFJ15b]{paodcvjcadanda:2015}
+\textsc{Paoluzzi A., DiCarlo A., Furiani F., Jirik M.}:
+\newblock Cad models from medical images using lar.
+\newblock \emph{Computer-Aided Design and Applications 13} (2015).
+\newblock To appear.
+
+\bibitem[PMS15]{paoluzziMS:2014}
+\textsc{Paoluzzi A., Marino E., Spini F.}:
+\newblock Lar-abc, a representation of architectural geometry from concept of
+  spaces, to design of building fabric, to construction simulation.
+\newblock In \emph{Advances in Architectural Geometry 2014}, Block P., Knippers
+  J., Mitra N.~J., Wang W., (Eds.). Springer International Publishing, 2015,
+  pp.~353--372.
+\newblock URL: \url{http://dx.doi.org/10.1007/978-3-319-11418-7_23}, \href
+  {http://dx.doi.org/10.1007/978-3-319-11418-7_23}
+  {\path{doi:10.1007/978-3-319-11418-7_23}}.
+
+\bibitem[PPV95]{Paoluzzi:1995:GPP:212332.212349}
+\textsc{Paoluzzi A., Pascucci V., Vicentino M.}:
+\newblock Geometric programming: a programming approach to geometric design.
+\newblock \emph{{ACM} Trans. Graph. 14}, 3 (July 1995), 266--306.
+\newblock URL: \url{http://doi.acm.org/10.1145/212332.212349}, \href
+  {http://dx.doi.org/10.1145/212332.212349} {\path{doi:10.1145/212332.212349}}.
+
+\bibitem[PSB15]{webOfThings:2015}
+\textsc{Pendyala V.~S., Shim S.~S., Bussler C.}:
+\newblock The web that extends beyond the world.
+\newblock \emph{IEEE Computer} (May 2015).
+
+\bibitem[Spo15]{Sportillo:2015}
+\textsc{Sportillo M.}:
+\newblock \emph{FIVE - Framework per il mapping virtuale di ambienti indoor
+  interattivi su web: Architettura di supporto allo Internet of Things}.
+\newblock Master's thesis, Dipartimento di Ingegneria, Universit\`a degli Studi
+  Roma Tre, 2015.
+
+\bibitem[Vir15]{Virgadamo:2015}
+\textsc{Virgadamo M.}:
+\newblock \emph{FIVE - Framework per il mapping virtuale di ambienti indoor
+  interattivi su web: Navigazione e Calcolo dei Percorsi}.
+\newblock Master's thesis, Dipartimento di Ingegneria, Universit\`a degli Studi
+  Roma Tre, 2015.
+
+\end{thebibliography}
