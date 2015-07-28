@@ -20,4 +20,5 @@
 \contentsline {subsubsection}{\numberline {3.3.3}Realtime multi-person tracking}{9}{subsubsection.3.3.3}
 \contentsline {subsubsection}{\numberline {3.3.4}Cross-storey user navigation}{9}{subsubsection.3.3.4}
 \contentsline {section}{\numberline {4}Conclusions}{10}{section.4}
-\contentsline {section}{References}{10}{section.4}
+\contentsline {paragraph}{\numberline {4.0.4.1}Acknowledgements}{10}{paragraph.4.0.4.1}
+\contentsline {section}{References}{10}{paragraph.4.0.4.1}

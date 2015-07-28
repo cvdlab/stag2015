@@ -425,9 +425,9 @@ Simplicial and cuboidal cell complexes provide the standard mesh representation 
 
 \subsubsection*{LAR implementation} 
 
-The architectural modeling disussed in this paper is written in Python, using the \texttt{Pyplasm} and \texttt{Lar-cc} libraries.
+The architectural modeling discussed in this paper is written in Python, using the \texttt{Pyplasm} and \texttt{Lar-cc} libraries.
 The application produces \texttt{HIJSON} documents containing 2D plan models of building embedded in 3D (see Figure~\ref{fig:input-png0}b). Those are mapped to complete  3D virtual models, visitable in first person from the client-side  FIVE framework~\cite{Sportillo:2015,Virgadamo:2015}.
-The \href{https://github.com/plasm-language/pyplasm}{\texttt{Pyplasm}}  library is a python interface towards a C$^{++}$ geometric kernel, current implementation of the  PLaSM language~\cite{Paoluzzi:1995:GPP:212332.212349,Paoluzzi2003a}, developed as geometric extension of the functional language FL, by Bakus and the functional programming of IBM Research at Almaden~\cite{Aiken91thefl,fl-1,backus:78}. 
+The \href{https://github.com/plasm-language/pyplasm}{\texttt{Pyplasm}}  library is a python interface towards a C$^{++}$ geometric kernel, current implementation of the  PLaSM language~\cite{Paoluzzi:1995:GPP:212332.212349,Paoluzzi2003a}, developed as geometric extension of the functional language FL, by Backus and the functional programming group of IBM Research at Almaden~\cite{Aiken91thefl,fl-1,backus:78}. 
 
 The prototype Python implementation \href{https://github.com/cvdlab/lar-cc}{\texttt{lar-cc}} is  in progress as an integral part of a permanent effort to rethink the foundations of solid modeling, by simplifying and generalizing its data representation and disentangling its main algorithms. The computational framework aims to accommodate the new world of geometric data over cloud- and web-based infrastructures. This long-term project has already achieved some tangible results in applications for the extraction of solid models from 3D medical images~\cite{cadanda:2015} and to the simplified generation of building models for indoor mapping and IoT (as documented in this paper). 
 
@@ -839,6 +839,13 @@ integrated into the HIJSON environment. It is the case, for example, of fire
 extinguishers, that are able to show the date of their last check, stored in a
 database.
 
+\begin{figure*}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\textwidth]{images/ward} 
+   \caption{The modeling of two ward depertments in a general hospital.}
+   \label{fig:example}
+\end{figure*}
+
 \subsubsection{Realtime multi-person tracking} Realtime multi-person tracking
 allows a Supervisor to monitor the current real position of people inside the
 building. This kind of task can be useful for several reasons, including
@@ -886,6 +893,10 @@ document format and the web framework, might be easily collected in a public
 repository. Community could both use public available extensions or contribute
 by mapping new (smart) objects inside the HIJSON document format.
 
+
+\paragraph{Acknowledgements}
+
+A.P acknowledges the inspiring cooperation on LAR from Antonio DiCarlo and Vadim Shapiro. Thanks are extended to SOGEI, the ICT company of the Italian Ministry of Economy and Finance, for the support provided through several grants. Giulia Clementi has developed the virtual environment of the ward department of the general hospital model.
 %-------------------------------------------------------------------------
 
 %\bibliographystyle{eg-alpha}
