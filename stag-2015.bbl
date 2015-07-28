@@ -1,3 +1,4 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{\uppercase{PDFJ15b}}
 
 \bibitem[AWW91]{Aiken91thefl}
@@ -11,6 +12,23 @@
 \newblock \emph{Commun. {ACM} 21}, 8 (1978), 613--641.
 \newblock \href {http://dx.doi.org/http://doi.acm.org/10.1145/359576.359579}
   {\path{doi:http://doi.acm.org/10.1145/359576.359579}}.
+
+\bibitem[Bas10]{Basak:2010}
+\textsc{Basak T.}:
+\newblock Combinatorial cell complexes and {Poincar\'e} duality.
+\newblock \emph{Geometriae Dedicata 147}, 1 (2010), 357--387.
+\newblock URL: \url{http://dx.doi.org/10.1007/s10711-010-9458-y}, \href
+  {http://dx.doi.org/10.1007/s10711-010-9458-y}
+  {\path{doi:10.1007/s10711-010-9458-y}}.
+
+\bibitem[BG12]{gemmexp}
+\textsc{Bulu\c{c} A., Gilbert J.~R.}:
+\newblock Parallel sparse matrix-matrix multiplication and indexing:
+  Implementation and experiments.
+\newblock \emph{{SIAM} Journal of Scientific Computing (SISC) 34}, 4 (2012),
+  170 -- 191.
+\newblock URL: \url{http://gauss.cs.ucsb.edu/~aydin/spgemm_sisc12.pdf}, \href
+  {http://dx.doi.org/10.1137/110848244} {\path{doi:10.1137/110848244}}.
 
 \bibitem[BWW90]{fl-1}
 \textsc{Backus J., Williams J.~H., Wimmers E.~L.}:
@@ -101,5 +119,15 @@
   interattivi su web: Navigazione e Calcolo dei Percorsi}.
 \newblock Master's thesis, Dipartimento di Ingegneria, Universit\`a degli Studi
   Roma Tre, 2015.
+
+\bibitem[WOV{\etalchar{*}}07]{Williams:2007:OSM:1362622.1362674}
+\textsc{Williams S., Oliker L., Vuduc R., Shalf J., Yelick K., Demmel J.}:
+\newblock Optimization of sparse matrix-vector multiplication on emerging
+  multicore platforms.
+\newblock In \emph{Proceedings of the 2007 ACM/IEEE conference on
+  Supercomputing} (New York, NY, USA, 2007), SC '07, ACM, pp.~38:1--38:12.
+\newblock URL: \url{http://doi.acm.org/10.1145/1362622.1362674}, \href
+  {http://dx.doi.org/10.1145/1362622.1362674}
+  {\path{doi:10.1145/1362622.1362674}}.
 
 \end{thebibliography}

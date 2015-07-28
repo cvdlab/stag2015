@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.17)  27 JUL 2015 10:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.17)  28 JUL 2015 06:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -325,20 +325,20 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (./stag-2015.aux)
 \openout1 = `stag-2015.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -374,7 +374,7 @@ e
 Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
 (hyperref)                using 11in.
 
-Package hyperref Info: Link coloring ON on input line 141.
+Package hyperref Info: Link coloring ON on input line 154.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -383,82 +383,111 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count116
 )
-LaTeX Info: Redefining \ref on input line 141.
-LaTeX Info: Redefining \pageref on input line 141.
-LaTeX Info: Redefining \nameref on input line 141.
+LaTeX Info: Redefining \ref on input line 154.
+LaTeX Info: Redefining \pageref on input line 154.
+LaTeX Info: Redefining \nameref on input line 154.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count117
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 151.
-LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 15
-1.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 163.
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 16
+3.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 15
-1.
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 16
+3.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omlptmcm.fd
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+psycm on input line 15
-1.
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 16
+3.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omxpsycm.fd
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 151.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 163.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 151.
+LaTeX Font Info:    Try loading font information for U+msa on input line 163.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 151.
+LaTeX Font Info:    Try loading font information for U+msb on input line 163.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+<images/teaser2.pdf, id=4, 1024.82875pt x 353.32pt>
+File: images/teaser2.pdf Graphic file (type pdf)
+ <use images/teaser2.pdf>
+Package pdftex.def Info: images/teaser2.pdf used on input line 163.
+(pdftex.def)             Requested size: 456.0pt x 157.20804pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 152.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 164.
 
 
 LaTeX Warning: Footnotes are not permitted in CGF articles -- please remove on 
-input line 152.
+input line 181.
 
-<images/webOfThings.pdf, id=6, 361.35pt x 345.79187pt>
-File: images/webOfThings.pdf Graphic file (type pdf)
+./stag-2015.tex:181: Argument of \@sect has an extra }.
+<inserted text> 
+                \par 
+l.181 Ministry of Economy and Finance.}}
+                                        
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
 
-<use images/webOfThings.pdf>
-Package pdftex.def Info: images/webOfThings.pdf used on input line 189.
-(pdftex.def)             Requested size: 108.0pt x 103.3479pt.
+Runaway argument?
+{\raggedright \reset@font \normalsize \bfseries }{\@xfootnote }\def \reserved@b
+ \ETC.
+./stag-2015.tex:181: Paragraph ended before \@sect was complete.
+<to be read again> 
+                   \par 
+l.181 Ministry of Economy and Finance.}}
+                                        
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--190
-[]\T1/ptm/m/n/9 Figure 1: |Web of Things (2010--2020?). Im-age
- []
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 1014) has occurred while \output is active []
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 228.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 199.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 228.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 199.
  [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./images/webOfThings.pdf>]
+ <./images/teaser2.pdf>] <images/webOfThings.pdf, id=30, 361.35pt x 345.79187pt
+>
+File: images/webOfThings.pdf Graphic file (type pdf)
+
+<use images/webOfThings.pdf>
+Package pdftex.def Info: images/webOfThings.pdf used on input line 202.
+(pdftex.def)             Requested size: 108.0pt x 103.3479pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--203
+[]\T1/ptm/m/n/9 Figure 1: |Web of Things (2010--2020?). Im-age
+ []
+
 Package epstopdf Info: Source file: <images/sogei2.eps>
 (epstopdf)                    date: 2015-05-21 10:23:39
 (epstopdf)                    size: 52076663 bytes
@@ -467,15 +496,382 @@ Package epstopdf Info: Source file: <images/sogei2.eps>
 (epstopdf)                    size: 1417071 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/sogei2-eps-converte
 d-to.pdf images/sogei2.eps>
-(epstopdf)             \includegraphics on input line 284.
+(epstopdf)             \includegraphics on input line 297.
 Package epstopdf Info: Output file is already uptodate.
- <images/sogei2-eps-converted-to.pdf, id=37, 1595.9625pt x 1033.8625pt>
+<images/sogei2-eps-converted-to.pdf, id=35, 1595.9625pt x 1033.8625pt>
 File: images/sogei2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/sogei2-eps-converted-to.pdf>
 Package pdftex.def Info: images/sogei2-eps-converted-to.pdf used on input line 
-284.
+297.
 (pdftex.def)             Requested size: 216.0pt x 139.91248pt.
 
 
-LaTeX Warning: `h' float specifier c
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <./images/webOfThings.pdf>]
+<images/zigzag1.pdf, id=66, 537.00626pt x 538.01pt>
+File: images/zigzag1.pdf Graphic file (type pdf)
+ <use images/zigzag1.pdf>
+Package pdftex.def Info: images/zigzag1.pdf used on input line 363.
+(pdftex.def)             Requested size: 72.95978pt x 72.95659pt.
+
+<images/zigzag2.pdf, id=67, 495.8525pt x 492.84125pt>
+File: images/zigzag2.pdf Graphic file (type pdf)
+ <use images/zigzag2.pdf>
+Package pdftex.def Info: images/zigzag2.pdf used on input line 364.
+(pdftex.def)             Requested size: 72.9598pt x 72.9604pt.
+
+<images/zigzag3.pdf, id=68, 562.1pt x 564.1075pt>
+File: images/zigzag3.pdf Graphic file (type pdf)
+ <use images/zigzag3.pdf>
+Package pdftex.def Info: images/zigzag3.pdf used on input line 365.
+(pdftex.def)             Requested size: 72.95547pt x 72.95781pt.
+
+<images/randomdelaunay1.pdf, id=69, 576.1525pt x 576.1525pt>
+File: images/randomdelaunay1.pdf Graphic file (type pdf)
+
+<use images/randomdelaunay1.pdf>
+Package pdftex.def Info: images/randomdelaunay1.pdf used on input line 366.
+(pdftex.def)             Requested size: 72.95955pt x 72.95955pt.
+
+<images/randomdelaunay2.pdf, id=70, 549.05125pt x 549.05125pt>
+File: images/randomdelaunay2.pdf Graphic file (type pdf)
+
+<use images/randomdelaunay2.pdf>
+Package pdftex.def Info: images/randomdelaunay2.pdf used on input line 367.
+(pdftex.def)             Requested size: 72.9542pt x 72.9542pt.
+
+<images/randomdelaunay3.pdf, id=71, 595.22375pt x 590.205pt>
+File: images/randomdelaunay3.pdf Graphic file (type pdf)
+
+<use images/randomdelaunay3.pdf>
+Package pdftex.def Info: images/randomdelaunay3.pdf used on input line 368.
+(pdftex.def)             Requested size: 72.95868pt x 72.9559pt.
+ [3 <./images/sogei2-eps-converted-to.pdf>]
+Underfull \hbox (badness 1052) in paragraph at lines 391--393
+\T1/ptm/m/n/9 This scheme works even with the com-pli-cated do-main
+ []
+
+<images/minimum-data.pdf, id=96, 1069.63641pt x 218.26564pt>
+File: images/minimum-data.pdf Graphic file (type pdf)
+
+<use images/minimum-data.pdf>
+Package pdftex.def Info: images/minimum-data.pdf used on input line 400.
+(pdftex.def)             Requested size: 216.0pt x 44.07532pt.
+
+<images/minimum-colors-a.pdf, id=97, 492.56363pt x 357.76216pt>
+File: images/minimum-colors-a.pdf Graphic file (type pdf)
+
+<use images/minimum-colors-a.pdf>
+Package pdftex.def Info: images/minimum-colors-a.pdf used on input line 404.
+(pdftex.def)             Requested size: 103.67908pt x 75.3015pt.
+
+<images/minimum-colors-b.pdf, id=98, 502.30229pt x 359.81236pt>
+File: images/minimum-colors-b.pdf Graphic file (type pdf)
+
+<use images/minimum-colors-b.pdf>
+Package pdftex.def Info: images/minimum-colors-b.pdf used on input line 410.
+(pdftex.def)             Requested size: 103.67908pt x 74.2671pt.
+
+<images/boundary.pdf, id=99, 464.93701pt x 338.94629pt>
+File: images/boundary.pdf Graphic file (type pdf)
+
+<use images/boundary.pdf>
+Package pdftex.def Info: images/boundary.pdf used on input line 417.
+(pdftex.def)             Requested size: 159.84119pt x 116.52802pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <./images/zigzag1.pdf> <./images/zigzag2.pdf> <./images/zigzag3.pdf> <./imag
+es/randomdelaunay1.pdf> <./images/randomdelaunay2.pdf> <./images/randomdelaunay
+3.pdf>]
+Underfull \hbox (badness 4819) in paragraph at lines 479--484
+[]\T1/ptm/m/n/9 Such struc-tured and se-man-ti-cally an-no-tated build-
+ []
+
+
+LaTeX Warning: Reference `fig:input-png' on page 5 undefined on input line 493.
+
+
+[5 <./images/minimum-data.pdf> <./images/minimum-colors-a.pdf> <./images/minimu
+m-colors-b.pdf> <./images/boundary.pdf>]
+<images/input-png7.pdf, id=244, 1065.9825pt x 878.28125pt>
+File: images/input-png7.pdf Graphic file (type pdf)
+
+<use images/input-png7.pdf>
+Package pdftex.def Info: images/input-png7.pdf used on input line 540.
+(pdftex.def)             Requested size: 101.30273pt x 83.46439pt.
+
+<images/input-png12.pdf, id=245, 801.99625pt x 604.2575pt>
+File: images/input-png12.pdf Graphic file (type pdf)
+
+<use images/input-png12.pdf>
+Package pdftex.def Info: images/input-png12.pdf used on input line 541.
+(pdftex.def)             Requested size: 110.37634pt x 83.15712pt.
+
+<images/input-png5.pdf, id=246, 1058.95625pt x 878.28125pt>
+File: images/input-png5.pdf Graphic file (type pdf)
+
+<use images/input-png5.pdf>
+Package pdftex.def Info: images/input-png5.pdf used on input line 542.
+(pdftex.def)             Requested size: 216.0pt x 179.13751pt.
+
+<images/input-colors.pdf, id=248, 860.81194pt x 754.18071pt>
+File: images/input-colors.pdf Graphic file (type pdf)
+
+<use images/input-colors.pdf>
+Package pdftex.def Info: images/input-colors.pdf used on input line 583.
+(pdftex.def)             Requested size: 216.0pt x 189.23518pt.
+ [6 <./images/input-png7.pdf> <./images/input-png12.pdf> <./images/input-png5.p
+df>]
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 595.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 597.
+
+Overfull \hbox (9.6023pt too wide) in paragraph at lines 613--614
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+<images/input-png9.pdf, id=285, 498.86375pt x 498.86375pt>
+File: images/input-png9.pdf Graphic file (type pdf)
+
+<use images/input-png9.pdf>
+Package pdftex.def Info: images/input-png9.pdf used on input line 626.
+(pdftex.def)             Requested size: 70.19821pt x 70.19821pt.
+
+<images/input-png10.pdf, id=286, 470.75874pt x 488.82625pt>
+File: images/input-png10.pdf Graphic file (type pdf)
+
+<use images/input-png10.pdf>
+Package pdftex.def Info: images/input-png10.pdf used on input line 627.
+(pdftex.def)             Requested size: 70.19414pt x 70.1955pt.
+
+<images/input-png11.pdf, id=287, 544.0325pt x 540.0175pt>
+File: images/input-png11.pdf Graphic file (type pdf)
+
+<use images/input-png11.pdf>
+Package pdftex.def Info: images/input-png11.pdf used on input line 628.
+(pdftex.def)             Requested size: 70.19542pt x 70.19649pt.
+ [7 <./images/input-colors.pdf> <./images/input-png9.pdf> <./images/input-png10
+.pdf> <./images/input-png11.pdf>]
+Package epstopdf Info: Source file: <images/pipeline.eps>
+(epstopdf)                    date: 2015-05-21 10:23:39
+(epstopdf)                    size: 415039 bytes
+(epstopdf)             Output file: <images/pipeline-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-05-21 10:23:39
+(epstopdf)                    size: 117259 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/pipeline-eps-conver
+ted-to.pdf images/pipeline.eps>
+(epstopdf)             \includegraphics on input line 695.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/pipeline-eps-converted-to.pdf, id=360, 1555.8125pt x 331.2375pt>
+File: images/pipeline-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/pipeline-eps-converted-to.pdf>
+Package pdftex.def Info: images/pipeline-eps-converted-to.pdf used on input lin
+e 695.
+(pdftex.def)             Requested size: 216.0pt x 45.98375pt.
+
+<images/graph-new-1.pdf, id=362, 383.4325pt x 304.13625pt>
+File: images/graph-new-1.pdf Graphic file (type pdf)
+
+<use images/graph-new-1.pdf>
+Package pdftex.def Info: images/graph-new-1.pdf used on input line 719.
+(pdftex.def)             Requested size: 45.60278pt x 36.16992pt.
+
+<images/graph-new-2.pdf, id=363, 382.42876pt x 307.1475pt>
+File: images/graph-new-2.pdf Graphic file (type pdf)
+
+<use images/graph-new-2.pdf>
+Package pdftex.def Info: images/graph-new-2.pdf used on input line 723.
+(pdftex.def)             Requested size: 45.60278pt x 36.62177pt.
+
+<images/graph-new-3.pdf, id=364, 382.42876pt x 308.15125pt>
+File: images/graph-new-3.pdf Graphic file (type pdf)
+
+<use images/graph-new-3.pdf>
+Package pdftex.def Info: images/graph-new-3.pdf used on input line 727.
+(pdftex.def)             Requested size: 45.60278pt x 36.74144pt.
+
+<images/graph-new-4.pdf, id=365, 380.42125pt x 306.14375pt>
+File: images/graph-new-4.pdf Graphic file (type pdf)
+
+<use images/graph-new-4.pdf>
+Package pdftex.def Info: images/graph-new-4.pdf used on input line 731.
+(pdftex.def)             Requested size: 45.60278pt x 36.69829pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package epstopdf Info: Source file: <images/element-class-node.eps>
+(epstopdf)                    date: 2015-05-21 10:23:39
+(epstopdf)                    size: 298010 bytes
+(epstopdf)             Output file: <images/element-class-node-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2015-05-21 10:23:39
+(epstopdf)                    size: 91550 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/element-class-node-
+eps-converted-to.pdf images/element-class-node.eps>
+(epstopdf)             \includegraphics on input line 755.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/element-class-node-eps-converted-to.pdf, id=367, 1027.84pt x 200.75pt>
+File: images/element-class-node-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/element-class-node-eps-converted-to.pdf>
+Package pdftex.def Info: images/element-class-node-eps-converted-to.pdf used on
+ input line 755.
+(pdftex.def)             Requested size: 129.60132pt x 25.31117pt.
+ [8 <./images/pipeline-eps-converted-to.pdf> <./images/graph-new-1.pdf> <./imag
+es/graph-new-2.pdf> <./images/graph-new-3.pdf> <./images/graph-new-4.pdf> <./im
+ages/element-class-node-eps-converted-to.pdf>] <images/2D-3D.pdf, id=433, 1261.
+71375pt x 468.75125pt>
+File: images/2D-3D.pdf Graphic file (type pdf)
+
+<use images/2D-3D.pdf>
+Package pdftex.def Info: images/2D-3D.pdf used on input line 798.
+(pdftex.def)             Requested size: 216.0pt x 80.24455pt.
+ (./stag-2015.bbl (./stag-2015.brf)
+\tf@brf=\write3
+\openout3 = `stag-2015.brf'.
+
+ [9 <./images/2D-3D.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]\T1/ptm/m/sc/8 Basak T.\T1/ptm/m/n/8 :  Com-bi-na-to-rial cell com-plexes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/ptm/m/n/8 and Poincaré du-al-ity.  \T1/ptm/m/it/8 Ge-ome-triae Ded-i-cata 1
+47\T1/ptm/m/n/8 , 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/ptm/m/n/8 (2010), 357--387.  URL: [][]$\T1/pcr/m/n/8 http : / / dx . doi . 
+org /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\T1/pcr/m/n/8 10 . 1007 / s10711-[]010-[]9458-[]y$[][]\T1/ptm/m/n/8 , [][]$\T1/
+pcr/m/n/8 doi : 10 . 1007 /
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 46--46
+[]\T1/ptm/m/sc/8 Dicarlo A., Paoluzzi A., Shapiro V.\T1/ptm/m/n/8 :  Lin-
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 46--46
+\T1/ptm/m/it/8 put. Aided Des. 46 \T1/ptm/m/n/8 (Jan. 2014), 269--274.  URL: []
+[]$\T1/pcr/m/n/8 http :
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 96--96
+[]\T1/ptm/m/sc/8 Paoluzzi A., Marino E., Spini F.\T1/ptm/m/n/8 :  Lar-abc,
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 96--96
+\T1/ptm/m/n/8 a rep-re-sen-ta-tion of ar-chi-tec-tural ge-om-e-try from con-cep
+t of
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 96--96
+\T1/ptm/m/n/8 ter-na-tional Pub-lish-ing, 2015, pp. 353--372.  URL: [][]$\T1/pc
+r/m/n/8 http :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\T1/pcr/m/n/8 / / dx . doi . org / 10 . 1007 / 978-[]3-[]319-[]11418-[]7 _ 23$[
+][]\T1/ptm/m/n/8 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[][]$\T1/pcr/m/n/8 http : / / doi . acm . org / 10 . 1145 / 1362622 . 1362674$[
+][]\T1/ptm/m/n/8 ,
+ []
+
+) [10] (./stag-2015.toc
+Runaway argument?
+{\numberline {1}Introduction\GenericWarning { }{LaTeX Warning: Footno\ETC.
+./stag-2015.toc:1: Paragraph ended before \contentsline was complete.
+<to be read again> 
+                   \par 
+l.1 ... please remove}\let \reserved@d =[\def \par
+                                                   }{1}{section.1}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+./stag-2015.toc:1: Extra }, or forgotten \endgroup.
+l.1 ...lease remove}\let \reserved@d =[\def \par }
+                                                  {1}{section.1}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+)
+\tf@toc=\write4
+\openout4 = `stag-2015.toc'.
+
+ [11
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 886.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 886.
+ (./stag-2015.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 886.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 886.
+Package rerunfilecheck Info: File `stag-2015.brf' has not changed.
+(rerunfilecheck)             Checksum: 7E20E9B7B6B875CB59749328FC3B760B;1025.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 886.
+ ) 
+Here is how much of TeX's memory you used:
+ 9100 strings out of 493117
+ 137848 string characters out of 6135432
+ 240800 words of memory out of 5000000
+ 12293 multiletter control sequences out of 15000+600000
+ 55523 words of font info for 91 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,12n,44p,921b,972s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/time
+s/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on stag-2015.pdf (11 pages, 8118301 bytes).
+PDF statistics:
+ 583 PDF objects out of 1000 (max. 8388607)
+ 438 compressed objects within 5 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -2,7 +2,7 @@
 % Author guideline and sample document for EG publication using LaTeX2e input
 % D.Fellner, v1.12, Nov 01, 2006
 
-\documentclass{egpubl}
+\documentclass[]{egpubl}
 \usepackage{eg-it2015}
 
 % --- for  Annual CONFERENCE
@@ -52,9 +52,22 @@
 % D.Fellner, v1.17, Sep 23, 2010
 
 
-\title[SUBMISSION ID]{HIJSON: cartographic document for web modeling 
+\title[HIJSON: interactive indoor mapping]{HIJSON: cartographic document for web modeling 
 of interactive indoor mapping}
 
+\author[F. Spini, M. Sportillo, M. Virgadamo, A. Bottaro, E. Marino \& A. Paoluzzi]
+       {F. Spini$^{1}$, M. Sportillo$^{1}$, M. Virgadamo$^{1}$, E. Marino$^{1}$, A. Bottaro $^{2}$, and A. Paoluzzi$^{3}$
+%        S. Spencer$^2$\thanks{Chairman Siggraph Publications Board}
+        \\
+% For Computer Graphics Forum: Please use the abbreviation of your first name.
+         $^1$Dipartimento di Ingegneria, Universit\`a Roma Tre, Rome, Italy \\
+         $^2$Sogei S.p.A., Ricerca e Sviluppo, Rome, Italy \\
+         $^3$Dipartimento di Matematica e Fisica, Universit\`a Roma Tre, Rome, Italy 
+%        $^2$ Another Department to illustrate the use in papers from authors
+%             with different affiliations
+       }
+
+\nonstopmode
 % ------------------------------------------------------------------------
 
 % if the Editors-in-Chief have given you the data, you may uncomment
@@ -140,19 +153,17 @@ of interactive indoor mapping}
 %----macros end-----------------------------------------------------------------
 \begin{document}
 
-% \teaser{
-%  \includegraphics[width=\linewidth]{eg_new}
-%  \centering
-%   \caption{New EG Logo}
-% \label{fig:teaser}
-% }
+ \teaser{
+  \includegraphics[width=\linewidth]{images/teaser2}
+  \centering
+ \label{fig:teaser}
+ }
 
 \maketitle
 
-\begin{abstract} This paper introduces HIJSON\footnote{This work was partially
-supported by grant 2014/15 from Sogei S.p.A., the ICT company of the Italian
-Ministry of Economy and Finance.}, a novel indoor cartographic document
-format. A software framework is also presented, that relies on HIJSON
+\begin{abstract} This paper introduces HIJSON, a novel indoor cartographic document
+format with several enhancements. The document is generated using LAR (Linear Algebraic Representation) allowing for cellular complexes with general topology and shape. 
+A software framework FIVE is also presented, that relies on HIJSON
 documents and is entirely based on web technologies. With respect to current
 cartographic formats, HIJSON suggests four major enhancements: (a) exposes a
 hierarchical structure; (b) uses local metric coordinate systems; (c) may
@@ -165,7 +176,9 @@ of models of objects, sensors or behaviors.
 
 
 %-------------------------------------------------------------------------
-\section{Introduction}
+\section{Introduction\footnote{This work was partially
+supported by grant 2014/15 from Sogei S.p.A., the ICT company of the Italian
+Ministry of Economy and Finance.}}
 
 For environments with massive presence of sensor-equipped (or ``smart")
 objects, which realize the IoT (Internet of Things), the interactive indoor
@@ -282,7 +295,7 @@ smart device or a furniture element within a specific building room.
 \begin{figure}[h]
  \centering
  \includegraphics[width=\linewidth]{images/sogei2} 
- \caption{office building: 
+ \caption{Office building: 
  (a) the schematic plan ---made of SVG primitives: 
  lines, rects, polygons--- possibly obtained via a client UI 
  loading engineering design in background;
@@ -344,15 +357,29 @@ Therefore, to model the indoor space we need to partition the building into \emp
 
 A \emph{cell complex} $X$ is a partition of a compact space $S \subset \E^n$ into compact subsets of points, called \emph{cells}, such that the intersection of every pair of cells is either empty or is a \emph{boundary face} of both. The cells have a \emph{dimension}. 0-cells are topologically equivalent (homeomorphic) to single points (vertices), 1-cells to curves (edges), 2-cells to surfaces (faces) and 3-cells to solids.  The set of $d$-cells is denoted as $X_d$, so that $X$ can be seen as a \emph{stratification} $(X_0, X_1, \ldots, X_d)$. With abuse of language we call $X_h$ the $h$-skeleton of $X$, and $K_h: \{1,2,\ldots,n_h\} \to X_h$ the \emph{indexing maps} of $h$-cells $(0\leq h\leq d)$, where $n_h=|X_h|$. 
 
+
+\begin{figure*}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/zigzag1} 
+   \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/zigzag2} 
+   \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/zigzag3} 
+   \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/randomdelaunay1} 
+   \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/randomdelaunay2} 
+   \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/randomdelaunay3} 
+   \caption{LAR examples: (a) 2-chain of quad cells; (b) boundary 1-chain; (c) oriented boundary; (d) random 2-complex; (e) oriented 1-skeleton; (f) oriented boundary (red).}
+   \label{fig:meshes}
+\end{figure*}
+
+
 When the $X_0$ skeleton is embedded into the Euclidean space $\E^d$, providing a one-to-one mapping $\texttt{V}: K_0 \to \E^d$ of 0-cells with the \emph{vertices} array, a piecewice linear shape may be associated to a $h$-cell $\lambda$ via its characteristic function  as a subset of \texttt{V}. Let us remember that given a subset $A$ of a larger set, the characteristic function $\chi(A)$ is defined to be identically one on $A$, and zero elsewhere. 
 
 The cellular complex $X$ can be represented combinatorially  by $d+1$ families of characteristic functions of $h$-cells as subsets of vertices. For the sake of readability, let us use the symbols  \texttt{V}, \texttt{E}, \texttt{F}, \texttt{C} for $K_0$, $K_1$, $K_2$, and $K_3$, respectively, and \texttt{EV}, \texttt{FV}, \texttt{CV} for the binary matrices to be read as ``edges by vertices'', ``faces by vertices'', and ``cells by vertices'', having as rows the images of characteristic functions of 1-, 2- and 3- cells as discrete sets of vertices.
 
 It is well known that subsets of $h$-cells in a cellular complex can be seen as elements of a linear space $C_h$ of \emph{$h$-chains} over the finite field $Z_2 = \{0,1\}$. When the indexing of cells (i.e.~their ordering) is fixed, the \emph{characteristic matrices} \texttt{EV}, \texttt{FV}, \texttt{CV}, that can be seen as maps from cells to vertices, provide the bases for $C_1$, $C_2$, and $C_3$, respectively. 
 
-The boundary operators $\partial_3: C_3 \to C_2$ and $\partial_2: C_2 \to C_1$, computable by transposition, multiplication and filtering of values of two characteristic matrices~\cite{}, provide the basic tool to study the topology of a cellular complex. The product of the $\partial_d$ matrix  times the characteristic vector of a $d$-chain returns the \emph{boundary $(d-1)$-chain} of facets exposed on the border of such subset of $d$-cells.   
+The boundary operators $\partial_3: C_3 \to C_2$ and $\partial_2: C_2 \to C_1$, computable by transposition, multiplication and filtering of values of two characteristic matrices~\cite{Dicarlo:2014:TNL:2543138.2543294}, provide the basic tool to study the topology of a cellular complex. The product of the $\partial_d$ matrix  times the characteristic vector of a $d$-chain returns the \emph{boundary $(d-1)$-chain} of facets exposed on the border of such subset of $d$-cells.   
 
-Of course, characteristic and boundary matrices are \emph{very sparse}, with sparsity growing fast with the number of cells, since the number of vertices for cells is small and bounded. Therefore, a list of lists of integers suffices to represent such matrices, and special storage methods~\cite{}, and in particular the \texttt{CSR} (compressed sparse row)  and \texttt{CSC} (compressed sparse column), will provide fast computation of the boundary facets of \emph{every subset of cells}.
+Of course, characteristic and boundary matrices are \emph{very sparse}, with sparsity growing fast with the number of cells, since the number of vertices for cells is small and bounded. Therefore, a list of lists of integers suffices to represent such matrices, and special storage methods~\cite{gemmexp}, and in particular the \texttt{CSR} (compressed sparse row)  and \texttt{CSC} (compressed sparse column), will provide fast computation of the boundary facets of \emph{every subset of cells}.
 
 
 
@@ -361,10 +388,39 @@ Of course, characteristic and boundary matrices are \emph{very sparse}, with spa
 A \emph{representation scheme} is a mapping between the mathematical spaces to be represented by a computer system and their symbolic representation in computer memory. 
 The \emph{Linear Algebraic Representation} (LAR) scheme~\cite{Dicarlo:2014:TNL:2543138.2543294}, was recently introduced for topological methods to represent and process mesh connectivity information for dimension-independent cellular complexes, including simplicial, cubical, polytopal, and more general (non-convex and non symply-connected) cells. 
 
-The Linear Algebraic Representation (LAR) scheme uses Combinatorial Cellular Complexes (CCC) as mathematical domain [4] and various compressed representations of sparse matrices [9] as codomain.
+The Linear Algebraic Representation (LAR) scheme uses Combinatorial Cellular Complexes (CCC) as mathematical domain~\cite{Basak:2010} and various compressed representations of sparse matrices~\cite{Williams:2007:OSM:1362622.1362674,gemmexp} as codomain.
 This scheme works even with the complicated domain partitions---with non-convex and/or non-manifold cells, and cells non homeomorphic to balls---that may arise in Building Information Modeling (BIM) and Geographic Information Systems (GIS) applications. 
 
 Simplicial and cuboidal cell complexes provide the standard mesh representation used in most science and engineering simulations, whereas complexes of possibly non-convex or non-contractible cells may be needed to represent the built environment in software applications for the Architecture, Engineering, and Construction (AEC) sector.
+
+
+ \begin{figure}[!h]
+  \centering
+  \begin{subfigure}[b]{\linewidth}
+  \includegraphics[width=\textwidth]{images/minimum-data}
+  \end{subfigure}
+ \\
+  \begin{subfigure}[b]{0.48\linewidth}
+  \includegraphics[width=\textwidth]{images/minimum-colors-a}
+  \caption{}
+  \vspace*{4mm}
+  \end{subfigure}
+  ~
+  \begin{subfigure}[b]{0.48\linewidth}
+  \includegraphics[width=\textwidth]{images/minimum-colors-b}
+  \caption{}
+  \vspace*{4mm}
+  \end{subfigure}
+ \\
+  \begin{subfigure}[b]{0.74\linewidth}
+  \centering
+  \includegraphics[width=\textwidth]{images/boundary}
+  \caption{}
+  \end{subfigure}
+ 
+  \caption{A toy example of the LAR scheme: (a) the bare minimum of data with \emph{complete} information about topology; (b) the extracted boundary; (c) the extraction method $[e] = [\partial][f]$ giving the coordinate representation (in the discrete basis of the 1-cells) ofthe boundary edges $[e]$ by product of the sparse boundary operator matrix $[\partial]$ times the coordinate representation $[f]$ of the 2-cells (faces), in the discrete basis of the 2-cells.}
+  \label{fig:minimum-data}
+ \end{figure}
 
 
 \subsubsection*{LAR implementation} 
@@ -440,7 +496,7 @@ An user-interpretation of plans as wire-frame drawings is performed, using some 
 interactive drawing applications, both commercial and open-source. Such
 files can be also searched, indexed, scripted, compressed, and scripted  using JavaScript. The mechanism of \emph{layers}, if available, is useful to have the building plans correspond exactly. A metric scale is not fixed in advance, since the geometric representation of the building will be subsequently transformed to any useful scale and position by using an affine transformation matrix.
 
-In order to guarantee a standard quality of datum for any generated
+In order to guarantee a standard quality of \emph{datum} for any generated
 virtual environment, while at the same time to provide the maximum web 
 dissemination of the input process, only a small subset of
 \texttt{SVG} primitives is recognized. The
@@ -454,7 +510,7 @@ referenced by name.
 
 %\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
 %   \centering
-%   \includegraphics[width=\linewidth]{img/input-png} 
+%   \includegraphics[width=\linewidth]{images/input-png} 
 %   \caption{La griglia utilizzata nel disegno ha passo pari a 1 metro lineare.}
 %   \label{fig:input-png}
 %\end{figure}
@@ -471,12 +527,22 @@ data.
 At the end of the classification, with same geometric object possibly
 inserted in several different buckets, a \emph{brute-force} pairwise intersection
 is applied to each final subset. Finally, duplicated intersection
-points are removed, and a 1-dimensional LAR data structure is generated,
+points are removed by sorting, and a 1-dimensional LAR data structure is generated,
 with 1-cells given by the split line segments.
 
 \paragraph*{Maximal biconnected
 subgraph}\label{computation-of-the-maximal-biconnected-subgraph}
 It is worth noting that a one-dimensional LAR model is a pair \texttt{(V,EV)} made by an array \texttt{V} of vertex coordinates and by an array \texttt{EV} of pairs of vertex indices, i.e., it is a standard graph representation. the maximal biconnected subgraph is then computed, in order to remove all dangling edges and paths and to generate a plane partition into a set of quasi-disjoint 2D regions. A standard implementation of the Hopcroft-Tarjan algorithm for biconnected graph components~\cite{Hopcroft:1973:AEA:362248.362272} is used for this purpose.
+
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.469\linewidth]{images/input-png7} 
+   \includegraphics[width=0.511\linewidth]{images/input-png12} 
+   \includegraphics[width=\linewidth]{images/input-png5} 
+   \caption{Immagini leggermente esplose dello 1-scheletro delle strutture gerarchiche a livello di (a) piano-tipo e (b) di aggregato 2.5D di sei piani-tipo.}
+   \label{fig:input-png0}
+\end{figure}
 
 \paragraph*{LAR of cellular
 complex}\label{reconstruction-of-lar-of-the-cellular-complex}
@@ -485,8 +551,10 @@ A complete LAR of the plane partition generated by the arrangment of
 lines is then computed by traversing in
 counter-clockwise order the generated subgraphs, to report the
 2-dimensional cells of the plane partition.
-In particular, let us consider the binary characteristic matrix \texttt{EV}, and remark that we represent the edges on the
-rows, and the vertices on the columns of the matrix, so that \texttt{EV[h]$=$[K$_1$,K$_2$]} implies $e_h = (v_{k_1},v_{k_2})$. 
+In particular, let us consider the binary characteristic matrix \texttt{EV} as the storage for the incidence angles described below, and remark that we represent the edges on the
+rows, and the vertices on the columns of the matrix, so that \texttt{EV[h]$=$[K$_1$,K$_2$]} implies $e_h = (v_{k_1},v_{k_2})$ 
+and \texttt{EV[h,k$_1$]} is the value stored in 
+\texttt{COO$(h,k_i,\alpha)$} when representing the sparse matrix \texttt{EV} in \emph{coordinate format}. 
 Hence, we can readily reconstruct the topology of 2-cells by
 associating to each non-zero (sparse matrix) element
 the angle in radians that the edge $e_h$ forms
@@ -495,13 +563,8 @@ Of course, if $e_h = (v_{k_1},v_{k_2})$, then it will be
 \[
 \texttt{EV}(h,k_2) = \texttt{EV}(h,k_1)+\pi = -\texttt{EV}(h,k_1)
 \]
-Therefore, the columns of $\texttt{EV}$, i.e.\textasciitilde{}the
-rows of $\texttt{VE} := \texttt{EV}^\top$, after being sorted
-on their angles $\alpha$, and associated with the angle differences
-$\Delta\alpha$, will provide a basis of elementary $1$-cochains that
-evaluate to zero for each closed 1-cochain, i.e.~for every cycle
-supported by the given line arrangment.
-
+This signed angle information is used to traverse the \texttt{EV} graph counterclockwise, and to extract the coherently oriented cycles one by one,
+including the exterior cycle. This traversal provides the needed basis for 2-cells, i.e.~the \texttt{FV} matrix. The knowledge of both \texttt{EV} and \texttt{FV} allows to compute the $\partial_2$ matrix, and hence to get a complete control of the floorplan topology.
 
 \subsubsection*{Partial ordering of hierarchical chains}
 
@@ -515,40 +578,57 @@ In computer science, the term usually refers to \emph{partially ordered sets}, w
 
 The hierarchy of building units, follows from the functional meaning of these, is illustrated by colors in Figure~\ref{fig:input-png6}. We may distinguish in the model floorplan of our model building five 2-chains, orderly corresponding to \emph{north wing}, \emph{south wing}, \emph{east wing}, \emph{west  wing}, and \emph{floor lobby} of the building. The four wings are further subdivided into six 2-chains: \emph{rightside}, \emph{leftside}, \emph{corridor}, \emph{elevators}, \emph{staircases}, and \emph{restrooms}. Each of the latter directly correspond to a subset of 2-cells. The hierarchy of spaces is described as a (nested) dictionary in \texttt{Python}, and is used to compute  a unique id for each and every \emph{space unit} and \emph{building unit}, simply by executing the concatenation of name strings on every path of the hierarchy tree, starting from the root node.
 
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=\linewidth]{images/input-colors} 
+   \caption{Hierarchical partition of 2-cells.}
+   \label{fig:input-png6}
+\end{figure}
+
 \subsubsection*{Traversal of hierarchical building structure}
 
 The representation chosen for structure networks with LAR (in the \texttt{lar-cc} module) is the serialised one, consisting in ordered sequences (lists) of either (a) LAR models, or (b) affine transformations, or (c) references to other structures, either directly nested within some given structure, or called by reference (name) from within the list.
 In our test-case the root of the structure network is an object of \texttt{Struct} class, with name ``Tower" and type "Building". 
 
 The usual aim of a structure network traversal is to transform every component structure, usually defined in a local coordinate system, into the reference frame of the structure as a whole, normally corresponding with the reference system of the structure's root. 
-
 In our case, the traversal of the
 \emph{the ``Tower" structure produces as output the \texttt{HIJSON} model document}, discussed in the next section. 
 
-\begin{lstlisting}[language=json, label={lst:feature-collection-example}, captionpos=b,  caption=The traversal algorithm, producing a \texttt{HIJSON} file.]
-def print_traversal(out,obj,parent_id='',level=0): 
+\begin{lstlisting}[language=json, label={lst:feature-collection-example}, captionpos=b,  caption=Algorithm producing a HIJSON file.]
+def print_traversal(file, obj, parent_id='',
+                    level=0): 
   if is_struct(obj):
     if is_wall(obj):
-      print_wall(out, obj, parent_id)
+      print_wall(file, obj, parent_id)
       return
-    print_struct(out, obj, parent_id)
-    print_traversal(out, obj.body, obj.name)
+    print_struct(file, obj, parent_id)
+    print_traversal(file, obj.body, obj.name)
     return
   if is_model(obj):
-    print_model(out, obj, parent_id)
+    print_model(file, obj, parent_id)
     return
   if is_list(obj):
-    print_traversal(out, obj[0], parent_id)
+    print_traversal(file, obj[0], parent_id)
     if len(obj) > 1:
-      print_traversal(out, obj[1:], parent_id)
+      print_traversal(file, obj[1:], parent_id)
     return
   if is_mat(obj):
-    print_mat(out, obj, parent_id)
+    print_mat(file, obj, parent_id)
     return
 \end{lstlisting}
 
 %-------------------------------------------------------------------------
 \section{HIJSON Ecosystem}
+
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[height=0.325\linewidth,width=0.325\linewidth]{images/input-png9} 
+   \includegraphics[height=0.325\linewidth,width=0.325\linewidth]{images/input-png10} 
+   \includegraphics[height=0.325\linewidth,width=0.325\linewidth]{images/input-png11} 
+   \caption{Sequence of local coordinates used within the hierarchical substructures \texttt{sud} of \texttt{south} structure of \emph{floor-plan}. Let notice the position of local frame, in RGB colors.}
+   \label{fig:input-png9}
+\end{figure}
 
 
 \subsection{HIJSON Document}
@@ -716,7 +796,7 @@ use personal devices.
 \begin{figure}[htb]
 \centering
 \includegraphics[width=\linewidth]{images/2D-3D}
-\caption{HIJSON Web Framework UI}
+\caption{FRAME Web Framework UI}
 \label{fig:web-framework-ui}
 \end{figure}
 
@@ -757,7 +837,7 @@ position in continuos mode. Evidence of the people position is given to the
 Supervisor both into a 2D map and an immersive 3D virtual environment (see
 Figure 6).
 
-\subsubsection{Cross-storey user navigation} The HIJSON Framework also provides
+\subsubsection{Cross-storey user navigation} The FRAME Framework also provides
 the capability to give directions to Explorer users that must move across the
 indoor environment. The user specifies a starting and an ending point and the
 system provides him with a valid connection path. This feature strongly rely
@@ -777,7 +857,7 @@ system, avoiding the manipulation of global geographical coordinates, really
 inconvenient when dealing with indoor spaces and objects, greatly enhances the
 modeling and rendering of the document content. Currently, we produce the
 HIJSON document from a python script using two libraries for geometric
-computing (pyplasm and larcc [7, 14, 6]). The modeling process can be further
+computing (pyplasm and larcc). The modeling process can be further
 improved by implementing a LAR-based graphical editor to assist the user
 during the description of the indoor space. The realization of such an editor
 is already in our plans. On the basis of this representation a virtual web
