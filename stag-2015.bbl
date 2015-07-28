@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{\uppercase{PDFJ15b}}
+\begin{thebibliography}{\uppercase{BDHL{\etalchar{*}}14}}
 
 \bibitem[AWW91]{Aiken91thefl}
 \textsc{Aiken A., Williams J.~H., Wimmers}:
@@ -20,6 +20,15 @@
 \newblock URL: \url{http://dx.doi.org/10.1007/s10711-010-9458-y}, \href
   {http://dx.doi.org/10.1007/s10711-010-9458-y}
   {\path{doi:10.1007/s10711-010-9458-y}}.
+
+\bibitem[BDHL{\etalchar{*}}14]{6816739}
+\textsc{Boysen M., De~Haas C., Lu H., Xie X., Pilvinyte A.}:
+\newblock Constructing indoor navigation systems from digital building
+  information.
+\newblock In \emph{Data Engineering (ICDE), 2014 IEEE 30th International
+  Conference on} (March 2014), pp.~1194--1197.
+\newblock \href {http://dx.doi.org/10.1109/ICDE.2014.6816739}
+  {\path{doi:10.1109/ICDE.2014.6816739}}.
 
 \bibitem[BG12]{gemmexp}
 \textsc{Bulu\c{c} A., Gilbert J.~R.}:

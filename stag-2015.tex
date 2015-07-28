@@ -55,7 +55,7 @@
 \title[HIJSON: interactive indoor mapping]{HIJSON: cartographic document for web modeling 
 of interactive indoor mapping}
 
-\author[F. Spini, M. Sportillo, M. Virgadamo, A. Bottaro, E. Marino \& A. Paoluzzi]
+\author[F. Spini, M. Sportillo, M. Virgadamo, E. Marino, A. Bottaro, \& A. Paoluzzi]
        {F. Spini$^{1}$, M. Sportillo$^{1}$, M. Virgadamo$^{1}$, E. Marino$^{1}$, A. Bottaro $^{2}$, and A. Paoluzzi$^{3}$
 %        S. Spencer$^2$\thanks{Chairman Siggraph Publications Board}
         \\
@@ -162,13 +162,13 @@ of interactive indoor mapping}
 \maketitle
 
 \begin{abstract} This paper introduces HIJSON, a novel indoor cartographic document
-format with several enhancements. The document is generated using LAR (Linear Algebraic Representation) allowing for cellular complexes with general topology and shape. 
+format with several enhancements. The document is generated using LAR (Linear Algebraic Representation), so allowing for cellular complexes with general topology and shape. 
 A software framework FIVE is also presented, that relies on HIJSON
 documents and is entirely based on web technologies. With respect to current
 cartographic formats, HIJSON suggests four major enhancements: (a) exposes a
 hierarchical structure; (b) uses local metric coordinate systems; (c) may
 import external geometric models; (d) accepts semantic extensions. The
-semantic extensions supported by the HIJSON framework architecture encapsulate
+semantic extensions supported by the FIVE framework architecture encapsulate
 the details about communication protocols, rendering style, and exchanged and
 displayed information, allowing the HIJSON format to be extended with any sort
 of models of objects, sensors or behaviors. 
@@ -181,8 +181,8 @@ supported by grant 2014/15 from Sogei S.p.A., the ICT company of the Italian
 Ministry of Economy and Finance.}}
 
 For environments with massive presence of sensor-equipped (or ``smart")
-objects, which realize the IoT (Internet of Things), the interactive indoor
-mapping represents an ideal integrated interface for IoT monitoring systems.
+objects, which realize the IoT (Internet of Things), an \emph{interactive indoor
+mapping} represents the ideal integrated interface for IoT monitoring systems.
 To be specific, it can be the container of indoor navigation systems, giving
 the user, to be routed across an indoor environment, the opportunity to
 interact with objects along the suggested paths. Furthermore, in conjunction
@@ -191,11 +191,11 @@ nowadays focused to realize an integration of positioning systems like GNSS
 (Global Navigation Satellite system), Wi-Fi, Bluetooth and LTE (Long Term
 Evolution), to support continuos outdoor/indoor navigation by means of
 integration of technologies, it represents the most natural interface to
-perform realtime access monitoring and multi-person tracking.Web based
-tecnologies supporting self and context aweare objects in conjunction  with
-location systems represent the enabling piece for the scenario depicted in
-figure~\ref{fig:web-of-thing} we are relentlssly moving torward: the Web of
-Things.
+perform realtime access monitoring and multi-person tracking. Self-supporting web-based
+tecnologies and context-aware objects, in conjunction  with
+location systems, represent the enabling components for the scenario (depicted in
+Figure~\ref{fig:web-of-thing}) we are relentlssly moving torward: the \emph{Web of
+Things}.
 
 \begin{figure}[htbp]
 \centering
@@ -221,7 +221,7 @@ of the produced solution depends on the adopted approach. In some cases the
 information is obtained with automatic or semi-automatic processing of files
 that describe the architectural structure of a building, such as BIM (Building
 Information Modeling)~\cite{Eastman:2008:BHG:1796500} and/or IFC (Industry
-Foundation Classes) that describe a building project [4].  The actual ``de-facto" 
+Foundation Classes) that describe a building project~\cite{6816739}.  The actual ``de-facto" 
 standard in terms of geospatial data representation is the GeoJSON
 format, which can be easily used for any type of geographical annotation. In
 some cases it has been slightly adapted to be used in indoor environments: it
@@ -379,7 +379,7 @@ It is well known that subsets of $h$-cells in a cellular complex can be seen as 
 
 The boundary operators $\partial_3: C_3 \to C_2$ and $\partial_2: C_2 \to C_1$, computable by transposition, multiplication and filtering of values of two characteristic matrices~\cite{Dicarlo:2014:TNL:2543138.2543294}, provide the basic tool to study the topology of a cellular complex. The product of the $\partial_d$ matrix  times the characteristic vector of a $d$-chain returns the \emph{boundary $(d-1)$-chain} of facets exposed on the border of such subset of $d$-cells.   
 
-Of course, characteristic and boundary matrices are \emph{very sparse}, with sparsity growing fast with the number of cells, since the number of vertices for cells is small and bounded. Therefore, a list of lists of integers suffices to represent such matrices, and special storage methods~\cite{gemmexp}, and in particular the \texttt{CSR} (compressed sparse row)  and \texttt{CSC} (compressed sparse column), will provide fast computation of the boundary facets of \emph{every subset of cells}.
+Of course, characteristic and boundary matrices are \emph{very sparse}, with sparsity growing fast with the number of cells, since the number of vertices for cell is small and bounded. Therefore, a list of lists of integers suffices to represent such matrices, and special storage methods~\cite{gemmexp}, and in particular the \texttt{CSR} (compressed sparse row)  and \texttt{CSC} (compressed sparse column), will provide fast computation of the boundary facets of \emph{every subset of cells}.
 
 
 
@@ -435,20 +435,23 @@ The prototype Python implementation \href{https://github.com/cvdlab/lar-cc}{\tex
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 \subsection{Hierarchical cellular complex}
 
-aaa aaa aa
+The linear chain spaces $C_h$ ($0\leq h\leq d$) can be enriched with a preorder stucture, induced by subset containment, providing for a richer denotation of the family of subsets of cells, which  corresponds to the set union of \emph{BuildingUnits}, and \emph{BuildingSpaces}. A corresponding set of names is also introduced, so that every substructure, at every hierarchical level, is associated to a unique ID, generated by concatenation of ancestor names along the (unique) path from the hierarchy root to the current node in the traversal of the hierachy.  Both the 2-cells and the 1-cells are inserted in the hierarchy. The former in ragion of functional requirements, the latter to automatically select the building components where to automatically insert the openings. Doors and windows are so automatically associated to appropriate hierarchical 1-chains. 
 
 \subsubsection*{Boundary and coboundary operators}
+
+The boundary operators $\partial_h$ are used for fast computation of the possibly unconnected or multiply connected horizontal partitions of the building, where necessary. 
+Their dual \emph{cobounbary} operators $\delta^{h-1} := \partial_h^\top$ are used to compute the chains of 2-cell sharing a common door, starting from the 1-chain corresponding to the 2-boundary of either horizontal or vertical communications, in order to automatically build the graph of all continuous paths inside the building.
 
 \subsubsection*{Building structures and assemblies}
 
 Hierarchical models of complex assemblies are generated by aggregation
 of subassemblies, each one defined in a local coordinate system, and
 relocated by affine transformations of coordinates.  This operation
-may be repeated hierarchically, with some subassemblies defined by
+is repeated hierarchically, with some subassemblies defined by
 aggregation of simpler parts, and so on, until one obtains a set of
 elementary components, which cannot be further decomposed.
 
-Two main advantages can be found in a hierarchical modeling approach. Each elementary part and each assembly, at every hierarchical level, are defined independently from each other, using a local coordinate frame, suitably chosen to make its definition easier. Furthermore, only one copy of each component may be stored in the memory, and instanced in different locations and orientations how many times it is needed.
+Two main advantages can be found in a hierarchical modeling approach. Each elementary part and each assembly, at every hierarchical level, are defined independently from each other, using a local coordinate frame, suitably chosen to make its definition easier. Furthermore, only one copy of each component are stored in memory, and instanced in different locations and orientations how many times it is needed.
 
 
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -540,7 +543,7 @@ It is worth noting that a one-dimensional LAR model is a pair \texttt{(V,EV)} ma
    \includegraphics[width=0.469\linewidth]{images/input-png7} 
    \includegraphics[width=0.511\linewidth]{images/input-png12} 
    \includegraphics[width=\linewidth]{images/input-png5} 
-   \caption{Immagini leggermente esplose dello 1-scheletro delle strutture gerarchiche a livello di (a) piano-tipo e (b) di aggregato 2.5D di sei piani-tipo.}
+   \caption{Exploded images of hierarchical structures: (a) model floorplan; (b) 2.5D assembly of floorplans. (c) The integer indexing \texttt{V,E,F} (i.e.~$k_0$, $k_1$, $k_2$) of 0-, 1-, and 2-cells.}
    \label{fig:input-png0}
 \end{figure}
 
@@ -580,8 +583,8 @@ The hierarchy of building units, follows from the functional meaning of these, i
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\linewidth]{images/input-colors} 
-   \caption{Hierarchical partition of 2-cells.}
+   \includegraphics[width=0.7\linewidth]{images/input-colors} 
+   \caption{Hierarchical partition of 2-cells. Any hierarchical structuring is allowed.}
    \label{fig:input-png6}
 \end{figure}
 
@@ -626,7 +629,7 @@ def print_traversal(file, obj, parent_id='',
    \includegraphics[height=0.325\linewidth,width=0.325\linewidth]{images/input-png9} 
    \includegraphics[height=0.325\linewidth,width=0.325\linewidth]{images/input-png10} 
    \includegraphics[height=0.325\linewidth,width=0.325\linewidth]{images/input-png11} 
-   \caption{Sequence of local coordinates used within the hierarchical substructures \texttt{sud} of \texttt{south} structure of \emph{floor-plan}. Let notice the position of local frame, in RGB colors.}
+   \caption{Sequence of local coordinates used within the hierarchical substructures of \texttt{south} structure of \emph{floor-plan}. Let notice the position of local frames, in RGB colors.}
    \label{fig:input-png9}
 \end{figure}
 
@@ -778,8 +781,17 @@ Socket.io library.
 Being supported by the web-as-a-platform, the framework exposes also an high
 availability: it is so simple to use as to visit a website, both from desktop
 or mobile devices, without explicit requirements to install any software
-package from proprietary stores|access to which is often denied from business
+package from proprietary stores---access to which is often denied from business
 devices.
+
+\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+   \includegraphics[width=0.32\linewidth]{images/five1} 
+   \includegraphics[width=0.37\linewidth]{images/five2} 
+   \includegraphics[width=0.26\linewidth]{images/five3} 
+   \caption{HIJSON + FIVE: (a) Hierarchical structures; (b) metric positioning of furniture e/o IoT devices in the local coordinate frame; (c) automatic construction of the whole graph of paths within the building.}
+   \label{fig:example}
+\end{figure}
 
 \subsubsection{Applications}
 
@@ -853,22 +865,24 @@ user is to show the connection nodes visualized in one or more 2D maps.
 
 In this paper a novel document format, named HIJSON, for indoor cartographical
 descriptions has been introduced. Utilization of local metric coordinate
-system, avoiding the manipulation of global geographical coordinates, really
+frames, avoiding the manipulation of global geographical coordinates, really
 inconvenient when dealing with indoor spaces and objects, greatly enhances the
 modeling and rendering of the document content. Currently, we produce the
 HIJSON document from a python script using two libraries for geometric
 computing (pyplasm and larcc). The modeling process can be further
 improved by implementing a LAR-based graphical editor to assist the user
 during the description of the indoor space. The realization of such an editor
-is already in our plans. On the basis of this representation a virtual web
-environment can be rebuilt working as a unifying platform to run a bunch of
-different applications. The reference architecture of such a platform has been
-also implemented and described in this work. The architecture supports a whole
+is already in our plans. 
+
+On the basis of a HIJSON text file a  web virtual
+environment may work as a unifying interface to run a bunch of
+different applications. A prototype reference architecture of such a platform has been
+ implemented and described in this work. The architecture supports a whole
 range of applications: IoT monitoring, realtime multi-person tracking and user
-crossstorey navigation are already implemented and described. A very
-convenient way to extend the representation capabilities of smart objects is
+cross-storey navigation are already implemented and described. A very
+convenient way to extend the representation capabilities of IoT \emph{smart objects} is
 also mentioned as semantic extensions. These extensions, which affects both
-document format and its web framework, might be easily collected in a public
+document format and the web framework, might be easily collected in a public
 repository. Community could both use public available extensions or contribute
 by mapping new (smart) objects inside the HIJSON document format.
 
