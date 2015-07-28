@@ -10,36 +10,36 @@ Database file #1: doceng2015.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 You've used 19 entries,
             3585 wiz_defined-function locations,
-            886 strings with 10090 characters,
-and the built_in function-call counts, 10548 in all, are:
-= -- 1088
-> -- 439
+            890 strings with 10314 characters,
+and the built_in function-call counts, 10637 in all, are:
+= -- 1095
+> -- 448
 < -- 5
-+ -- 158
-- -- 153
-* -- 761
-:= -- 1535
++ -- 161
+- -- 156
+* -- 766
+:= -- 1544
 add.period$ -- 51
 call.type$ -- 19
-change.case$ -- 125
-chr.to.int$ -- 18
+change.case$ -- 127
+chr.to.int$ -- 19
 cite$ -- 19
-duplicate$ -- 331
-empty$ -- 881
-format.name$ -- 175
-if$ -- 2541
-int.to.chr$ -- 2
+duplicate$ -- 332
+empty$ -- 890
+format.name$ -- 177
+if$ -- 2563
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 18
+missing$ -- 17
 newline$ -- 110
 num.names$ -- 59
-pop$ -- 195
+pop$ -- 204
 preamble$ -- 1
-purify$ -- 148
+purify$ -- 150
 quote$ -- 0
-skip$ -- 647
+skip$ -- 653
 stack$ -- 0
-substring$ -- 436
+substring$ -- 437
 swap$ -- 98
 text.length$ -- 5
 text.prefix$ -- 5
@@ -47,5 +47,5 @@ top$ -- 0
 type$ -- 161
 warning$ -- 0
 while$ -- 75
-width$ -- 22
-write$ -- 267
+width$ -- 21
+write$ -- 268

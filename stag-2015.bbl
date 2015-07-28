@@ -21,6 +21,13 @@
   {http://dx.doi.org/10.1007/s10711-010-9458-y}
   {\path{doi:10.1007/s10711-010-9458-y}}.
 
+\bibitem[BDD{\etalchar{*}}08]{geojson:2008}
+\textsc{Butler H., Daly M., Doyle A., Gillies S., Schaub T., Schmidt C.}:
+\newblock The geojson format specification, 16 June 2008.
+\newblock GeoJSON is a geospatial data interchange format based on JavaScript
+  Object Notation (JSON).
+\newblock URL: \url{http://geojson.org/geojson-spec.html}.
+
 \bibitem[BDHL{\etalchar{*}}14]{6816739}
 \textsc{Boysen M., De~Haas C., Lu H., Xie X., Pilvinyte A.}:
 \newblock Constructing indoor navigation systems from digital building
@@ -80,15 +87,9 @@
 \newblock \emph{Geometric Programming for Computer Aided Design}.
 \newblock John Wiley \& Sons, Chichester, {UK}, 2003.
 
-\bibitem[PDFJ15a]{cadanda:2015}
+\bibitem[PDFJ15]{cadanda:2015}
 \textsc{Paoluzzi A., DiCarlo A., Furiani F., Jirik M.}:
 \newblock {CAD} models from medical images using {LAR}.
-\newblock \emph{Computer-Aided Design and Applications 13} (2015).
-\newblock To appear.
-
-\bibitem[PDFJ15b]{paodcvjcadanda:2015}
-\textsc{Paoluzzi A., DiCarlo A., Furiani F., Jirik M.}:
-\newblock Cad models from medical images using lar.
 \newblock \emph{Computer-Aided Design and Applications 13} (2015).
 \newblock To appear.
 
