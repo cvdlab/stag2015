@@ -27,6 +27,6 @@ build/Release
 node_modules
 
 # intermediate latex compilation files
-.log
-.aux
-.bbl
+*.log
+*.aux
+*.bbl

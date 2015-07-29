@@ -56,7 +56,7 @@
 of interactive indoor mapping}
 
 \author[F. Spini, M. Sportillo, M. Virgadamo, E. Marino, A. Bottaro, \& A. Paoluzzi]
-       {F. Spini$^{1}$, M. Sportillo$^{1}$, M. Virgadamo$^{1}$, E. Marino$^{1}$, A. Bottaro $^{2}$, and A. Paoluzzi$^{3}$
+       {F. Spini$^{1}$, M. Sportillo$^{1}$, M. Virgadamo$^{1}$, E. Marino$^{1}$, A. Bottaro $^{2}$ and A. Paoluzzi$^{3}$
 %        S. Spencer$^2$\thanks{Chairman Siggraph Publications Board}
         \\
 % For Computer Graphics Forum: Please use the abbreviation of your first name.
@@ -154,7 +154,7 @@ of interactive indoor mapping}
 \begin{document}
 
  \teaser{
-  \includegraphics[width=\linewidth]{images/teaser2}
+  \includegraphics[width=\linewidth]{images/teaser3}
   \centering
  \label{fig:teaser}
  }
@@ -194,7 +194,7 @@ integration of technologies, it represents the most natural interface to
 perform realtime access monitoring and multi-person tracking. Self-supporting web-based
 tecnologies and context-aware objects, in conjunction  with
 location systems, represent the enabling components for the scenario (depicted in
-Figure~\ref{fig:web-of-thing}) we are relentlssly moving torward: the \emph{Web of
+Figure~\ref{fig:web-of-thing}) we are relentlessly moving torward: the \emph{Web of
 Things}.
 
 \begin{figure}[htbp]
@@ -234,8 +234,8 @@ is the case of the IndoorJSON format.
 
 The focus of this work is the definition of a novel format of cartographic
 documents along with the software ecosystem rooted on it. HIJSON (Hierarchical
-Indoor JSON) is the name chosen for the new document format; with the
-accompanying software framework, aims to realize a mapping between the real
+Indoor JSON) is the name chosen for the new document format. Along with the
+accompanying software framework, it aims to realize a mapping between the real
 indoor spaces and a virtual interactive web environment. A simple but
 effective algorithm to find indoor valid routes is also provided.
 
@@ -262,7 +262,7 @@ effective algorithm to find indoor valid routes is also provided.
 %  \label{fig:sogei}
 % \end{figure*}
 
-\subsubsection{Hierarchical structure}
+\subsubsection*{Hierarchical structure}
 
 The HIJSON format allows for hierarchical description of indoor spaces,
 reflecting a container-contained relationship. This directly implies a neater
@@ -275,7 +275,7 @@ document structure the actual logical or physical divisions, categories or
 relationships among the modelled spaces. Furthermore, the container-contained
 relation enables a recurring use of local reference frames.
 
-\subsubsection{Metric local coordinate system}
+\subsubsection*{Metric local coordinate system}
 
 Supported by the hierarchical underlying structure, the HIJSON document format
 allows the use of local coordinate systems. Hence the shape of all elements
@@ -290,7 +290,7 @@ longitude angles, like the ones provided by GNSS systems. This kind of
 coordinates are certainly not particularly user friendly, when positioning a
 smart device or a furniture element within a specific building room.
 
-\subsubsection{Hyperlinked geometric models}
+\subsubsection*{Hyperlinked geometric models}
 
 \begin{figure}[h]
  \centering
@@ -306,8 +306,8 @@ smart device or a furniture element within a specific building room.
  \label{fig:sogei}
 \end{figure}
 
-The HIJSON document may further import external geometric models | either of
-the buildings themselves or the interior furniture or devices | that are
+The HIJSON document may further import external geometric models, either of
+the buildings themselves or the interior furniture or devices, that are
 topologically complete (in the sense of solid modeling [15]) and very compact.
 Such models, coming from a source outside the document, are acquired by
 hyperlinking JSON files that contain a Linear Algebraic Representation (LAR)
@@ -319,11 +319,11 @@ construction~\cite{paoluzziMS:2014}, 2D and 3D engineering meshes, non-
 manifold geometric and solid models and meshes, and high-resolution 3D
 images~\cite{cadanda:2015}.  The expansion of a LAR model, to be considered as
 a general-purpose graphic primitive, may be executed on either the server or
-the supervisor client of the HIJSON Web Toolkit architecture (see Section
+the supervisor client of the FIVE Web Framework architecture (see Section
 6.2.1), or even on the Explorer client.
 
 
-\subsubsection{Semantic extensions} Semantic extensions make the HIJSON format
+\subsubsection*{Semantic extensions} Semantic extensions make the HIJSON format
 extendible and customizable, that is able to adequately respond to any need of
 objects representation. To define a semantic extension means to allow the
 HIJSON document to model an object previously not covered, or even to modify
@@ -427,9 +427,9 @@ Simplicial and cuboidal cell complexes provide the standard mesh representation 
 
 The architectural modeling discussed in this paper is written in Python, using the \texttt{Pyplasm} and \texttt{Lar-cc} libraries.
 The application produces \texttt{HIJSON} documents containing 2D plan models of building embedded in 3D (see Figure~\ref{fig:input-png0}b). Those are mapped to complete  3D virtual models, visitable in first person from the client-side  FIVE framework~\cite{Sportillo:2015,Virgadamo:2015}.
-The \href{https://github.com/plasm-language/pyplasm}{\texttt{Pyplasm}}  library is a python interface towards a C$^{++}$ geometric kernel, current implementation of the  PLaSM language~\cite{Paoluzzi:1995:GPP:212332.212349,Paoluzzi2003a}, developed as geometric extension of the functional language FL, by Backus and the functional programming group of IBM Research at Almaden~\cite{Aiken91thefl,fl-1,backus:78}. 
+The \href{https://github.com/plasm-language/pyplasm}{\texttt{Pyplasm}}  library is a python interface towards a C++ geometric kernel, current implementation of the  PLaSM language~\cite{Paoluzzi:1995:GPP:212332.212349,Paoluzzi2003a}, developed as geometric extension of the functional language FL, by Backus and the functional programming group of IBM Research at Almaden~\cite{Aiken91thefl,fl-1,backus:78}. 
 
-The prototype Python implementation \href{https://github.com/cvdlab/lar-cc}{\texttt{lar-cc}} is  in progress as an integral part of a permanent effort to rethink the foundations of solid modeling, by simplifying and generalizing its data representation and disentangling its main algorithms. The computational framework aims to accommodate the new world of geometric data over cloud- and web-based infrastructures. This long-term project has already achieved some tangible results in applications for the extraction of solid models from 3D medical images~\cite{cadanda:2015} and to the simplified generation of building models for indoor mapping and IoT (as documented in this paper). 
+The Python prototypal implementation of \href{https://github.com/cvdlab/lar-cc}{\texttt{lar-cc}} is in progress as an integral part of a permanent effort to rethink the foundations of solid modeling, by simplifying and generalizing its data representation and disentangling its main algorithms. The computational framework aims to accommodate the new world of geometric data over cloud- and web-based infrastructures. This long-term project has already achieved some tangible results in applications for the extraction of solid models from 3D medical images~\cite{cadanda:2015} and to the simplified generation of building models for indoor mapping and IoT (as documented in this paper). 
 
 
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -486,16 +486,34 @@ Such structured and semantically annotated
 \item
   The \texttt{.json} files are finally transformed client-side into both
   2D and 3D environments allowing the real-time spatial placement and
-  user-tracing within the virtual environment of the individuals moving
+  user-tracking within the virtual environment of the individuals moving
   inside the real building.
 \end{enumerate}
 
 \subsubsection*{From raster images to vector drawings}
 
-The architectural shape is introduced in the system using a rasterization of its plan drawings.
-In the test-case we used a \texttt{.png} raster file of the first building floor, and supposed the layout constant on the various storeys. Of course, the number of input files will correspond to the number of different floor plans. In Figure~\ref{fig:input-png} and image is shown of the input image.
+\begin{figure}[!h]
+  \centering
+  \begin{subfigure}[b]{0.485\linewidth}
+  \includegraphics[width=\textwidth]{images/input-png}
+  \caption{}
+  \label{fig:input-png:a}
+  \end{subfigure}
+ ~
+  \begin{subfigure}[b]{0.485\linewidth}
+  \includegraphics[width=\textwidth]{images/input-png2}
+  \caption{}
+  \label{fig:input-png:b}
+  \end{subfigure}
+ 
+  \caption{Input image: (a) \texttt{.png} input file; (b) user-interpretation of plans as wire-frame drawings (red)}
+  \label{fig:input-png}
+ \end{figure}
 
-An user-interpretation of plans as wire-frame drawings is performed, using some interactive drawing application, producing one or more \texttt{.svg} files, can be written and read by most
+The architectural shape is introduced in the system using a rasterization of its plan drawings.
+In the test-case we used a \texttt{.png} raster file of the first building floor, and supposed the layout constant on the various storeys. Of course, the number of input files will correspond to the number of different floor plans. In Figure~\ref{fig:input-png:a} and image is shown of the input image.
+
+An user-interpretation of plans as wire-frame drawings is performed (In Figure~\ref{fig:input-png:b}, using some interactive drawing application, producing one or more \texttt{.svg} files, can be written and read by most
 interactive drawing applications, both commercial and open-source. Such
 files can be also searched, indexed, scripted, compressed, and scripted  using JavaScript. The mechanism of \emph{layers}, if available, is useful to have the building plans correspond exactly. A metric scale is not fixed in advance, since the geometric representation of the building will be subsequently transformed to any useful scale and position by using an affine transformation matrix.
 
@@ -543,7 +561,7 @@ It is worth noting that a one-dimensional LAR model is a pair \texttt{(V,EV)} ma
    \includegraphics[width=0.469\linewidth]{images/input-png7} 
    \includegraphics[width=0.511\linewidth]{images/input-png12} 
    \includegraphics[width=\linewidth]{images/input-png5} 
-   \caption{Exploded images of hierarchical structures: (a) model floorplan; (b) 2.5D assembly of floorplans. (c) The integer indexing \texttt{V,E,F} (i.e.~$k_0$, $k_1$, $k_2$) of 0-, 1-, and 2-cells.}
+   \caption{Exploded images of hierarchical structures: (a) model floorplan; (b) 2.5D assembly of floorplans. (c) The integer indexing \texttt{V,E,F} (i.e.~$k_0$, $k_1$, $k_2$) of 0-, 1- and 2-cells.}
    \label{fig:input-png0}
 \end{figure}
 
@@ -575,7 +593,7 @@ including the exterior cycle. This traversal provides the needed basis for 2-cel
 
 The next computational stage assign a semantics to 2-cells and to some significant subsets of 1-cells. For this purpose we employ the concept of \emph{hierarchy}.
 In mathematics, a hierarchy is a set-theoretical concept, defined as a \emph{preorder} defined on a set. A hierarchy is often defined as either a partially or totally ordered set. All partial orders and equivalence relations are preorders, but preorders are more general. 
-In computer science, the term usually refers to \emph{partially ordered sets}, whose elements are classes of objects of growing complexity. In this case the preorder that defines the hierarchy is the \emph{relation of containment} between classes of objects. In this sense we speak of  di \emph{hierarchical chains} as a family of subsets of cells partially ordered by containment.
+In computer science, the term usually refers to \emph{partially ordered sets}, whose elements are classes of objects of growing complexity. In this case the preorder that defines the hierarchy is the \emph{relation of containment} between classes of objects. In this sense we speak of \emph{hierarchical chains} as a family of subsets of cells partially ordered by containment.
 
 \paragraph*{Semantics of chains}
 
@@ -591,15 +609,14 @@ The hierarchy of building units, follows from the functional meaning of these, i
 \subsubsection*{Traversal of hierarchical building structure}
 
 The representation chosen for structure networks with LAR (in the \texttt{lar-cc} module) is the serialised one, consisting in ordered sequences (lists) of either (a) LAR models, or (b) affine transformations, or (c) references to other structures, either directly nested within some given structure, or called by reference (name) from within the list.
-In our test-case the root of the structure network is an object of \texttt{Struct} class, with name ``Tower" and type "Building". 
+In our test-case the root of the structure network is an object of \texttt{Struct} class, with name ``Tower" and type ``Building". 
 
 The usual aim of a structure network traversal is to transform every component structure, usually defined in a local coordinate system, into the reference frame of the structure as a whole, normally corresponding with the reference system of the structure's root. 
 In our case, the traversal of the
 \emph{the ``Tower" structure produces as output the \texttt{HIJSON} model document}, discussed in the next section. 
 
-\begin{lstlisting}[language=json, label={lst:feature-collection-example}, captionpos=b,  caption=Algorithm producing a HIJSON file.]
-def print_traversal(file, obj, parent_id='',
-                    level=0): 
+\begin{lstlisting}[language=json, label={lst:feature-collection-example}, captionpos=b, basicstyle=\ttfamily\scriptsize, caption=Algorithm producing a HIJSON file.]
+def print_traversal(file, obj, parent_id='', level=0): 
   if is_struct(obj):
     if is_wall(obj):
       print_wall(file, obj, parent_id)
@@ -681,7 +698,16 @@ example, it takes advantage of libraries and frameworks such as React, ``the
 JavaScript library for building user interfaces" by Facebook, and as Three.js,
 the current ``de-facto" standard to deal with WebGL technologies.
 
-\subsubsection{Processing pipeline}  The HIJSON processing pipeline, depicted in
+\subsubsection*{Processing pipeline}  
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=0.7\linewidth]{images/pipeline-horizontal}
+ \caption{HIJSON Toolkit processing pipeline.}
+ \label{fig:pipeline}
+\end{figure}
+
+The HIJSON processing pipeline, depicted in
 figure~\ref{fig:pipeline}, implements the sequence of preliminary
 transformations that have to be applied to a HIJSON document before any
 further operation. It is not strictly required to complete each stage of the
@@ -693,15 +719,40 @@ each storey of the building described by the HIJSON document. In this way a
 bidimensional layout can be provided for every level of the building, and
 visualized through any compliant GeoJSON viewer.
 
+
+
+\subsubsection*{Automatic generation of valid paths}
+
 \begin{figure}[h]
  \centering
- \includegraphics[width=\linewidth]{images/pipeline}
- \caption{HIJSON Toolkit processing pipeline.}
- \label{fig:pipeline}
+ \begin{subfigure}[b]{0.22\linewidth}
+ \includegraphics[width=\textwidth]{images/graph-new-1}
+ \caption{}
+ \end{subfigure}
+~
+ \begin{subfigure}[b]{0.22\linewidth}
+ \includegraphics[width=\textwidth]{images/graph-new-2}
+ \caption{}
+ \end{subfigure}
+~
+ \begin{subfigure}[b]{0.22\linewidth}
+ \includegraphics[width=\textwidth]{images/graph-new-3}
+ \caption{}
+ \end{subfigure}
+~
+ \begin{subfigure}[b]{0.22\linewidth}
+ \includegraphics[width=\textwidth]{images/graph-new-4}
+ \caption{}
+ \end{subfigure}
+ 
+ \caption{graph of paths generation: 
+ (a) detection of obstacles and computation of walkable area; 
+ (b) triangulation of walkable area; 
+ (c) identification of graph nodes; 
+ (d) junction of nodes.
+ }
+ \label{fig:graph-generation}
 \end{figure}
-
-
-\subsubsection{Automatic generation of valid paths}
 
 Figure~\ref{fig:graph-generation} describes the main steps of the algorithm.
 The graph generated, although non optimal, ensures a complete coverage of the
@@ -716,34 +767,15 @@ according to the divide et impera approach, the problem of paths generation is
 split in several sub-problems, which consist in the computation of the sub-
 graphs relative to each individual space, more generally a single room.
 
+
+\subsubsection*{HIJSON Class definition}
+
 \begin{figure}[h]
  \centering
- \begin{subfigure}[b]{0.1\textwidth}
- \includegraphics[width=\textwidth]{images/graph-new-1}
- \end{subfigure}
- ~
- \begin{subfigure}[b]{0.1\textwidth}
- \includegraphics[width=\textwidth]{images/graph-new-2}
- \end{subfigure}
- ~
- \begin{subfigure}[b]{0.1\textwidth}
- \includegraphics[width=\textwidth]{images/graph-new-3}
- \end{subfigure}
- ~
- \begin{subfigure}[b]{0.1\textwidth}
- \includegraphics[width=\textwidth]{images/graph-new-4}
- \end{subfigure}
- 
- \caption{graph of paths generation: 
- (a) detection of obstacles and computation of walkable area; 
- (b) triangulation of walkable area; 
- (c) identification of graph nodes; 
- (d) junction of nodes.
- }
- \label{fig:graph-generation}
+ \includegraphics[width=\linewidth]{images/element-class-node}
+ \caption{HIJSON Element/Class/Node relashionships.}
+ \label{fig:el-class-node}
 \end{figure}
-
-\subsubsection{HIJSON Class definition}
 
 To make better use of the possibilities offered by the HIJSON Toolkit and by
 the HIJSON document format, some custom dynamic behaviors can be described.
@@ -753,21 +785,15 @@ interface for such behavior is the HIJSON Class. Every Element of the input
 HIJSON document has a dynamic counterpart, a running instance called  Node,
 instantiated according to the corresponding Class via reflection methods, see figure~\ref{fig:el-class-node}.
 
-\begin{figure}[h]
- \centering
- \includegraphics[width=0.6\linewidth]{images/element-class-node}
- \caption{HIJSON Element/Class/Node relashionships.}
- \label{fig:el-class-node}
-\end{figure}
 
 User's needs for new indoor elements, greatly different sensor equipments,
 alternative representations of 2D or 3D viewports are accepted by the
 definition of new HIJSON Classes, that so provide single-point custom
 extensions of the Toolkit capabilities.
 
-\subsection{FIVE web framework}
+\subsection{FIVE Web Framework}
 
-The  \emph{Framework for Interactive Visual Environments} (FIVE), responds to the needs of an extendable, customizable,
+The  \emph{Framework for Indoor mapping in Virtual Environments} (FIVE), responds to the needs of an extendable, customizable,
 and scalable web framework which provides at the same time IoT monitoring,
 realtime multi-person tracking and cross-storey user navigation.
 
@@ -784,16 +810,37 @@ or mobile devices, without explicit requirements to install any software
 package from proprietary stores---access to which is often denied from business
 devices.
 
-\begin{figure}[htbp] %  figure placement: here, top, bottom, or page
-   \centering
-   \includegraphics[width=0.32\linewidth]{images/five1} 
-   \includegraphics[width=0.37\linewidth]{images/five2} 
-   \includegraphics[width=0.26\linewidth]{images/five3} 
-   \caption{HIJSON + FIVE: (a) Hierarchical structures; (b) metric positioning of furniture e/o IoT devices in the local coordinate frame; (c) automatic construction of the whole graph of paths within the building.}
-   \label{fig:example}
-\end{figure}
+% \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
+%    \centering
+%    \includegraphics[width=0.32\linewidth]{images/five1} 
+%    \includegraphics[width=0.37\linewidth]{images/five2} 
+%    \includegraphics[width=0.26\linewidth]{images/five3} 
+%    \caption{HIJSON + FIVE: (a) Hierarchical structures; (b) metric positioning of furniture e/o IoT devices in the local coordinate frame; (c) automatic construction of the whole graph of paths within the building.}
+%    \label{fig:example}
+% \end{figure}
 
-\subsubsection{Applications}
+\begin{figure}[!h]
+  \centering
+  \begin{subfigure}[b]{0.315\linewidth}
+  \includegraphics[width=\textwidth]{images/five1}
+  \caption{}
+  \end{subfigure}
+ ~
+  \begin{subfigure}[b]{0.365\linewidth}
+  \includegraphics[width=\textwidth]{images/five2} 
+  \caption{}
+  \end{subfigure}
+  ~
+  \begin{subfigure}[b]{0.255\linewidth}
+  \includegraphics[width=\textwidth]{images/five3} 
+  \caption{}
+  \end{subfigure}
+ 
+  \caption{HIJSON + FIVE: (a) Hierarchical structures; (b) metric positioning of furniture e/o IoT devices in the local coordinate frame; (c) automatic construction of the whole graph of paths within the building.}
+   \label{fig:five-example}
+ \end{figure}
+
+\subsubsection*{Applications}
 
 The Framework has been designed with focus on two different kind of users: the
 Explorer and the Supervisor. They have different requirements and are likely
@@ -808,11 +855,11 @@ use personal devices.
 \begin{figure}[htb]
 \centering
 \includegraphics[width=\linewidth]{images/2D-3D}
-\caption{FRAME Web Framework UI}
+\caption{FIVE Web Framework UI}
 \label{fig:web-framework-ui}
 \end{figure}
 
-\subsubsection{IoT monitoring}
+\subsubsection*{IoT monitoring}
 
 An IoT monitoring application consists of an interface showing to the user, in
 a single, integrated and centralized way, the information collected from all
@@ -830,7 +877,7 @@ Monitoring different smart objects may require different ways to visualize
 and/or send data and commands. In particular, the user interface is
 characterized by a dual-display mode, that allows the user to see at the same
 time a 2D map that gives an overall glance in a simplified plan, and a 3D
-virtual environment to navigate into, as shown in Figure 6.
+virtual environment to navigate into, as shown in Figure~\ref{Framework for Indoor mapping in Virtual Environments}.
 
 Alongside with typical smart objects, suitable to deal with like thermostats,
 where the user can read the room temperature and turn the heating on/off,
@@ -846,7 +893,7 @@ database.
    \label{fig:example}
 \end{figure*}
 
-\subsubsection{Realtime multi-person tracking} Realtime multi-person tracking
+\subsubsection*{Realtime multi-person tracking} Realtime multi-person tracking
 allows a Supervisor to monitor the current real position of people inside the
 building. This kind of task can be useful for several reasons, including
 security, logistics or to supervise composite operative workflows. Each device
@@ -856,7 +903,7 @@ position in continuos mode. Evidence of the people position is given to the
 Supervisor both into a 2D map and an immersive 3D virtual environment (see
 Figure 6).
 
-\subsubsection{Cross-storey user navigation} The FRAME Framework also provides
+\subsubsection*{Cross-storey user navigation} The FIVE Web Framework also provides
 the capability to give directions to Explorer users that must move across the
 indoor environment. The user specifies a starting and an ending point and the
 system provides him with a valid connection path. This feature strongly rely
@@ -894,9 +941,9 @@ repository. Community could both use public available extensions or contribute
 by mapping new (smart) objects inside the HIJSON document format.
 
 
-\paragraph{Acknowledgements}
+\paragraph*{Acknowledgements}
 
-A.P acknowledges the inspiring cooperation on LAR from Antonio DiCarlo and Vadim Shapiro. Thanks are extended to SOGEI, the ICT company of the Italian Ministry of Economy and Finance, for the support provided through several grants. Giulia Clementi has developed the virtual environment of the ward department of the general hospital model.
+A.P. acknowledges the inspiring cooperation on LAR from Antonio DiCarlo and Vadim Shapiro. Thanks are extended to SOGEI, the ICT company of the Italian Ministry of Economy and Finance, for the support provided through several grants. Giulia Clementi has developed the virtual environment of the ward department of the general hospital model.
 %-------------------------------------------------------------------------
 
 %\bibliographystyle{eg-alpha}
