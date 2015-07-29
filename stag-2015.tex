@@ -67,6 +67,8 @@ of interactive indoor mapping}
 %             with different affiliations
        }
 
+
+
 \nonstopmode
 % ------------------------------------------------------------------------
 
@@ -358,15 +360,52 @@ Therefore, to model the indoor space we need to partition the building into \emp
 A \emph{cell complex} $X$ is a partition of a compact space $S \subset \E^n$ into compact subsets of points, called \emph{cells}, such that the intersection of every pair of cells is either empty or is a \emph{boundary face} of both. The cells have a \emph{dimension}. 0-cells are topologically equivalent (homeomorphic) to single points (vertices), 1-cells to curves (edges), 2-cells to surfaces (faces) and 3-cells to solids.  The set of $d$-cells is denoted as $X_d$, so that $X$ can be seen as a \emph{stratification} $(X_0, X_1, \ldots, X_d)$. With abuse of language we call $X_h$ the $h$-skeleton of $X$, and $K_h: \{1,2,\ldots,n_h\} \to X_h$ the \emph{indexing maps} of $h$-cells $(0\leq h\leq d)$, where $n_h=|X_h|$. 
 
 
+% \begin{figure*}[htbp] %  figure placement: here, top, bottom, or page
+%    \centering
+%    \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/zigzag1} 
+%    \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/zigzag2} 
+%    \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/zigzag3} 
+%    \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/randomdelaunay1} 
+%    \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/randomdelaunay2} 
+%    \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/randomdelaunay3} 
+%    \caption{LAR examples: (a) 2-chain of quad cells; (b) boundary 1-chain; (c) oriented boundary; (d) random 2-complex; (e) oriented 1-skeleton; (f) oriented boundary (red).}
+%    \label{fig:meshes}
+% \end{figure*}
+
 \begin{figure*}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/zigzag1} 
-   \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/zigzag2} 
-   \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/zigzag3} 
-   \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/randomdelaunay1} 
-   \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/randomdelaunay2} 
-   \includegraphics[height=0.16\textwidth,width=0.16\textwidth]{images/randomdelaunay3} 
-   \caption{LAR examples: (a) 2-chain of quad cells; (b) boundary 1-chain; (c) oriented boundary; (d) random 2-complex; (e) oriented 1-skeleton; (f) oriented boundary (red).}
+   
+   \begin{subfigure}[b]{0.151\textwidth}
+   \includegraphics[width=\textwidth]{images/zigzag1}
+   \caption{}
+   \end{subfigure}
+~
+   \begin{subfigure}[b]{0.151\textwidth}
+   \includegraphics[width=\textwidth]{images/zigzag2}
+   \caption{}
+   \end{subfigure}
+~
+   \begin{subfigure}[b]{0.151\textwidth}
+   \includegraphics[width=\textwidth]{images/zigzag3}
+   \caption{}
+   \end{subfigure}
+~
+   \begin{subfigure}[b]{0.151\textwidth}
+   \includegraphics[width=\textwidth]{images/randomdelaunay1}
+   \caption{}
+   \end{subfigure}
+~
+   \begin{subfigure}[b]{0.151\textwidth}
+   \includegraphics[width=\textwidth]{images/randomdelaunay2}
+   \caption{}
+   \end{subfigure}
+~
+   \begin{subfigure}[b]{0.151\textwidth}
+   \includegraphics[width=\textwidth]{images/randomdelaunay3}
+   \caption{}
+   \end{subfigure}
+   
+   \caption{LAR examples: (a) 2-chain of quad cells; (b) boundary 1-chain; (c) oriented boundary; (d) random 2-complex; (e) oriented 1-skeleton; (f) oriented boundary (in red).}
    \label{fig:meshes}
 \end{figure*}
 
@@ -506,7 +545,7 @@ Such structured and semantically annotated
   \label{fig:input-png:b}
   \end{subfigure}
  
-  \caption{Input image: (a) \texttt{.png} input file; (b) user-interpretation of plans as wire-frame drawings (red)}
+  \caption{Input image: (a) \texttt{.png} input file; (b) user-interpretation of plans as wire-frame drawings (in red)}
   \label{fig:input-png}
  \end{figure}
 
@@ -638,7 +677,7 @@ def print_traversal(file, obj, parent_id='', level=0):
 \end{lstlisting}
 
 %-------------------------------------------------------------------------
-\section{HIJSON Ecosystem}
+\section{HIJSON Environment}
 
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
@@ -692,11 +731,7 @@ The HIJSON Toolkit is a software module that implements common operations and
 transformations on HIJSON documents. Written in JavaScript language, this
 software module has been built to be deployed in the web environment. It is
 modular and entirely isomorphic, i.e. can run on the server as well as on
-every client. Working in the web environment, the Toolkit benefits of the
-``fertility" commonly concerning the software development in this field: for
-example, it takes advantage of libraries and frameworks such as React, ``the
-JavaScript library for building user interfaces" by Facebook, and as Three.js,
-the current ``de-facto" standard to deal with WebGL technologies.
+every client.
 
 \subsubsection*{Processing pipeline}  
 
@@ -791,9 +826,9 @@ alternative representations of 2D or 3D viewports are accepted by the
 definition of new HIJSON Classes, that so provide single-point custom
 extensions of the Toolkit capabilities.
 
-\subsection{FIVE Web Framework}
+\section{FIVE Web Framework}
 
-The  \emph{Framework for Indoor mapping in Virtual Environments} (FIVE), responds to the needs of an extendable, customizable,
+The \emph{Framework for Indoor mapping in Virtual Environments} (FIVE), responds to the needs of an extendable, customizable,
 and scalable web framework which provides at the same time IoT monitoring,
 realtime multi-person tracking and cross-storey user navigation.
 
@@ -802,7 +837,9 @@ inherent characteristics, i.e. the possibility of semantic extensions.
 Scalability is directly borrowed from technologies used for software
 development: JavaScript language, using Node.js, in particular Express.js as
 backend framework, exploiting the power of WebSocket protocol through the
-Socket.io library.
+Socket.io library. On the clientside it is based on libraries such as React, ``the
+JavaScript library for building user interfaces" by Facebook, and Three.js,
+the current ``de-facto" standard to deal with WebGL technologies.
 
 Being supported by the web-as-a-platform, the framework exposes also an high
 availability: it is so simple to use as to visit a website, both from desktop
@@ -840,7 +877,7 @@ devices.
    \label{fig:five-example}
  \end{figure}
 
-\subsubsection*{Applications}
+\subsection{Applications}
 
 The Framework has been designed with focus on two different kind of users: the
 Explorer and the Supervisor. They have different requirements and are likely
@@ -859,7 +896,7 @@ use personal devices.
 \label{fig:web-framework-ui}
 \end{figure}
 
-\subsubsection*{IoT monitoring}
+\subsection{IoT monitoring}
 
 An IoT monitoring application consists of an interface showing to the user, in
 a single, integrated and centralized way, the information collected from all
@@ -888,12 +925,12 @@ database.
 
 \begin{figure*}[htbp] %  figure placement: here, top, bottom, or page
    \centering
-   \includegraphics[width=\textwidth]{images/ward} 
+   \includegraphics[width=\textwidth]{images/ward2} 
    \caption{The modeling of two ward depertments in a general hospital.}
    \label{fig:example}
 \end{figure*}
 
-\subsubsection*{Realtime multi-person tracking} Realtime multi-person tracking
+\subsection{Realtime multi-person tracking} Realtime multi-person tracking
 allows a Supervisor to monitor the current real position of people inside the
 building. This kind of task can be useful for several reasons, including
 security, logistics or to supervise composite operative workflows. Each device
@@ -903,7 +940,7 @@ position in continuos mode. Evidence of the people position is given to the
 Supervisor both into a 2D map and an immersive 3D virtual environment (see
 Figure 6).
 
-\subsubsection*{Cross-storey user navigation} The FIVE Web Framework also provides
+\subsection{Cross-storey user navigation} The FIVE Web Framework also provides
 the capability to give directions to Explorer users that must move across the
 indoor environment. The user specifies a starting and an ending point and the
 system provides him with a valid connection path. This feature strongly rely
@@ -945,6 +982,8 @@ by mapping new (smart) objects inside the HIJSON document format.
 
 A.P. acknowledges the inspiring cooperation on LAR from Antonio DiCarlo and Vadim Shapiro. Thanks are extended to SOGEI, the ICT company of the Italian Ministry of Economy and Finance, for the support provided through several grants. Giulia Clementi has developed the virtual environment of the ward department of the general hospital model.
 %-------------------------------------------------------------------------
+
+\balance
 
 %\bibliographystyle{eg-alpha}
 \bibliographystyle{eg-alpha-doi}
