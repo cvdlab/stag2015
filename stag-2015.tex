@@ -199,12 +199,12 @@ interact with objects along the suggested paths. Furthermore, in conjunction
 with the advancements in the field of user indoor location, whose efforts are
 nowadays focused to realize an integration of positioning systems like GNSS
 (Global Navigation Satellite system), Wi-Fi, Bluetooth and LTE (Long Term
-Evolution), to support continuos outdoor/indoor navigation by means of
+Evolution), to support continuous outdoor/indoor navigation by means of
 integration of technologies, it represents the most natural interface to
 perform realtime access monitoring and multi-person tracking. Self-supporting web-based
-tecnologies and context-aware objects, in conjunction  with
+technologies and context-aware objects, in conjunction  with
 location systems, represent the enabling components for the scenario (depicted in
-Figure~\ref{fig:web-of-thing}) we are relentlessly moving torward: the \emph{Web of
+Figure~\ref{fig:web-of-thing}) we are relentlessly moving toward: the \emph{Web of
 Things}.
 
 \begin{figure}[htbp]
@@ -323,14 +323,14 @@ Such models, coming from a source outside the document, are acquired by
 hyperlinking JSON files that contain a Linear Algebraic Representation (LAR)
 of topology and geometry, to be expanded for visualization or interaction at
 any useful level of detail (see figure~\ref{fig:sogei}). The LAR
-scheme~\cite{Dicarlo:2014:TNL:2543138.2543294} is characterised by a very
+scheme~\cite{Dicarlo:2014:TNL:2543138.2543294} is characterized by a very
 large domain, including architecture, building and
 construction~\cite{paoluzziMS:2014}, 2D and 3D engineering meshes, non-
 manifold geometric and solid models and meshes, and high-resolution 3D
 images~\cite{cadanda:2015}.  The expansion of a LAR model, to be considered as
 a general-purpose graphic primitive, may be executed on either the server or
-the supervisor client of the FIVE Web Framework architecture (see Section
-6.2.1), or even on the Explorer client.
+the Supervisor client of the FIVE Web Framework (see Section~\ref{sec:five-apps}),
+or even on the Explorer client.
 
 
 \subsubsection*{Semantic extensions} Semantic extensions make the HIJSON format
@@ -418,7 +418,7 @@ A \emph{cell complex} $X$ is a partition of a compact space $S \subset \E^n$ int
 \end{figure*}
 
 
-When the $X_0$ skeleton is embedded into the Euclidean space $\E^d$, providing a one-to-one mapping $\texttt{V}: K_0 \to \E^d$ of 0-cells with the \emph{vertices} array, a piecewice linear shape may be associated to a $h$-cell $\lambda$ via its characteristic function  as a subset of \texttt{V}. Let us remember that given a subset $A$ of a larger set, the characteristic function $\chi(A)$ is defined to be identically one on $A$, and zero elsewhere. 
+When the $X_0$ skeleton is embedded into the Euclidean space $\E^d$, providing a one-to-one mapping $\texttt{V}: K_0 \to \E^d$ of 0-cells with the \emph{vertices} array, a piecewise linear shape may be associated to a $h$-cell $\lambda$ via its characteristic function  as a subset of \texttt{V}. Let us remember that given a subset $A$ of a larger set, the characteristic function $\chi(A)$ is defined to be identically one on $A$, and zero elsewhere. 
 
 The cellular complex $X$ can be represented combinatorially  by $d+1$ families of characteristic functions of $h$-cells as subsets of vertices. For the sake of readability, let us use the symbols  \texttt{V}, \texttt{E}, \texttt{F}, \texttt{C} for $K_0$, $K_1$, $K_2$, and $K_3$, respectively, and \texttt{EV}, \texttt{FV}, \texttt{CV} for the binary matrices to be read as ``edges by vertices'', ``faces by vertices'', and ``cells by vertices'', having as rows the images of characteristic functions of 1-, 2- and 3- cells as discrete sets of vertices.
 
@@ -433,7 +433,7 @@ Of course, characteristic and boundary matrices are \emph{very sparse}, with spa
 \subsubsection*{LAR: Linear Algebraic Representation} 
 
 A \emph{representation scheme} is a mapping between the mathematical spaces to be represented by a computer system and their symbolic representation in computer memory. 
-The \emph{Linear Algebraic Representation} (LAR) scheme~\cite{Dicarlo:2014:TNL:2543138.2543294}, was recently introduced for topological methods to represent and process mesh connectivity information for dimension-independent cellular complexes, including simplicial, cubical, polytopal, and more general (non-convex and non symply-connected) cells. 
+The \emph{Linear Algebraic Representation} (LAR) scheme~\cite{Dicarlo:2014:TNL:2543138.2543294}, was recently introduced for topological methods to represent and process mesh connectivity information for dimension-independent cellular complexes, including simplicial, cubical, polytopal, and more general (non-convex and non simply-connected) cells. 
 
 The Linear Algebraic Representation (LAR) scheme uses Combinatorial Cellular Complexes (CCC) as mathematical domain~\cite{Basak:2010} and various compressed representations of sparse matrices~\cite{Williams:2007:OSM:1362622.1362674,gemmexp} as codomain.
 This scheme works even with the complicated domain partitions---with non-convex and/or non-manifold cells, and cells non homeomorphic to balls---that may arise in Building Information Modeling (BIM) and Geographic Information Systems (GIS) applications. 
@@ -465,7 +465,7 @@ Simplicial and cuboidal cell complexes provide the standard mesh representation 
   \caption{}
   \end{subfigure}
  
-  \caption{A toy example of the LAR scheme: (a) the bare minimum of data with \emph{complete} information about topology; (b) the extracted boundary; (c) the extraction method $[e] = [\partial][f]$ giving the coordinate representation (in the discrete basis of the 1-cells) ofthe boundary edges $[e]$ by product of the sparse boundary operator matrix $[\partial]$ times the coordinate representation $[f]$ of the 2-cells (faces), in the discrete basis of the 2-cells.}
+  \caption{A toy example of the LAR scheme: (a) the bare minimum of data with \emph{complete} information about topology; (b) the extracted boundary; (c) the extraction method $[e] = [\partial][f]$ giving the coordinate representation (in the discrete basis of the 1-cells) of the boundary edges $[e]$ by product of the sparse boundary operator matrix $[\partial]$ times the coordinate representation $[f]$ of the 2-cells (faces), in the discrete basis of the 2-cells.}
   \label{fig:minimum-data}
  \end{figure}
 
@@ -482,7 +482,7 @@ The Python prototypal implementation of \href{https://github.com/cvdlab/lar-cc}{
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 \subsection{Hierarchical cellular complex}
 
-The linear chain spaces $C_h$ ($0\leq h\leq d$) can be enriched with a preorder stucture, induced by subset containment, providing for a richer denotation of the family of subsets of cells, which  corresponds to the set union of \emph{BuildingUnits}, and \emph{BuildingSpaces}. A corresponding set of names is also introduced, so that every substructure, at every hierarchical level, is associated to a unique ID, generated by concatenation of ancestor names along the (unique) path from the hierarchy root to the current node in the traversal of the hierachy.  Both the 2-cells and the 1-cells are inserted in the hierarchy. The former in ragion of functional requirements, the latter to automatically select the building components where to automatically insert the openings. Doors and windows are so automatically associated to appropriate hierarchical 1-chains. 
+The linear chain spaces $C_h$ ($0\leq h\leq d$) can be enriched with a preorder structure, induced by subset containment, providing for a richer denotation of the family of subsets of cells, which  corresponds to the set union of \emph{BuildingUnits}, and \emph{BuildingSpaces}. A corresponding set of names is also introduced, so that every substructure, at every hierarchical level, is associated to a unique ID, generated by concatenation of ancestor names along the (unique) path from the hierarchy root to the current node in the traversal of the hierarchy.  Both the 2-cells and the 1-cells are inserted in the hierarchy. The former in region of functional requirements, the latter to automatically select the building components where to automatically insert the openings. Doors and windows are so automatically associated to appropriate hierarchical 1-chains. 
 
 \subsubsection*{Boundary and coboundary operators}
 
@@ -532,7 +532,7 @@ Such structured and semantically annotated
   \texttt{HIJSON} format. 
 \item
   The \texttt{.json} files are finally transformed client-side into both
-  2D and 3D environments allowing the real-time spatial placement and
+  2D and 3D environments allowing the realtime spatial placement and
   user-tracking within the virtual environment of the individuals moving
   inside the real building.
 \end{enumerate}
@@ -615,7 +615,7 @@ It is worth noting that a one-dimensional LAR model is a pair \texttt{(V,EV)} ma
 \paragraph*{LAR of cellular
 complex}\label{reconstruction-of-lar-of-the-cellular-complex}
 
-A complete LAR of the plane partition generated by the arrangment of
+A complete LAR of the plane partition generated by the arrangement of
 lines is then computed by traversing in
 counter-clockwise order the generated subgraphs, to report the
 2-dimensional cells of the plane partition.
@@ -626,7 +626,7 @@ and \texttt{EV[h,k$_1$]} is the value stored in
 Hence, we can readily reconstruct the topology of 2-cells by
 associating to each non-zero (sparse matrix) element
 the angle in radians that the edge $e_h$ forms
-with the orizontal line, when this one incides on the vertex $v_k$.
+with the horizontal line, when this one incides on the vertex $v_k$.
 Of course, if $e_h = (v_{k_1},v_{k_2})$, then it will be 
 \[
 \texttt{EV}(h,k_2) = \texttt{EV}(h,k_1)+\pi = -\texttt{EV}(h,k_1)
@@ -766,6 +766,19 @@ visualized through any compliant GeoJSON viewer.
 
 \subsubsection*{Automatic generation of valid paths}
 
+Figure~\ref{fig:graph-generation} describes the main steps of the algorithm.
+The graph generated, although non optimal, ensures a complete coverage of the
+surface while limiting the number of generated nodes. The resulting graph is
+weighted on the edges with nodes distances. 
+The graph of paths allows for calculations of directions between any two given
+nodes. Although different approaches have been explored [3], a very classical
+solution has been selected in this case, so directions are actually computed
+client-side by applying the Dijkstra algorithm to the graph.
+Taking advantage of the hierarchical structure of the HIJSON document, and
+according to the divide et impera approach, the problem of paths generation is
+split in several sub-problems, which consist in the computation of the sub-
+graphs relative to each individual space, more generally a single room.
+
 \begin{figure}[h]
  \centering
  \begin{subfigure}[b]{0.22\linewidth}
@@ -797,26 +810,13 @@ visualized through any compliant GeoJSON viewer.
  \label{fig:graph-generation}
 \end{figure}
 
-Figure~\ref{fig:graph-generation} describes the main steps of the algorithm.
-The graph generated, although non optimal, ensures a complete coverage of the
-surface while limiting the number of generated nodes. The resulting graph is
-weighted on the edges with nodes distances. 
-The graph of paths allows for calculations of directions between any two given
-nodes. Although different approaches have been explored [3], a very classical
-solution has been selected in this case, so directions are actually computed
-client-side by applying the Dijkstra algorithm to the graph.
-Taking advantage of the hierarchical structure of the HIJSON document, and
-according to the divide et impera approach, the problem of paths generation is
-split in several sub-problems, which consist in the computation of the sub-
-graphs relative to each individual space, more generally a single room.
-
 
 \subsubsection*{HIJSON Class definition}
 
 \begin{figure}[h]
  \centering
  \includegraphics[width=\linewidth]{images/element-class-node}
- \caption{HIJSON Element/Class/Node relashionships.}
+ \caption{HIJSON Element/Class/Node relationships.}
  \label{fig:el-class-node}
 \end{figure}
 
@@ -846,7 +846,7 @@ extensions of the Toolkit capabilities.
 
 The \emph{Framework for Indoor mapping in Virtual Environments} (FIVE), responds to the needs of an extendable, customizable,
 and scalable web framework which provides at the same time IoT monitoring,
-realtime multi-person tracking and cross-storey user navigation.
+real-time multi-person tracking and cross-storey user navigation.
 
 Expandability and customizability derive from both design choices and HIJSON
 inherent characteristics, i.e. the possibility of semantic extensions.
@@ -893,7 +893,7 @@ devices.
    \label{fig:five-example}
  \end{figure}
 
-\subsection{Applications}
+\subsection{Applications}\label{sec:five-apps}
 
 The Framework has been designed with focus on two different kind of users: the
 Explorer and the Supervisor. They have different requirements and are likely
@@ -935,7 +935,7 @@ database.
 \begin{figure*}[htbp] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=\textwidth]{images/ward2} 
-   \caption{The modeling of two ward depertments in a general hospital.}
+   \caption{The modeling of two ward departments in a general hospital.}
    \label{fig:example}
 \end{figure*}
 
@@ -945,7 +945,7 @@ building. This kind of task can be useful for several reasons, including
 security, logistics or to supervise composite operative workflows. Each device
 equipped with the Explorer application is in charge of locating itself,
 interacting with the indoor positioning system, and notifying the current
-position in continuos mode. Evidence of the people position is given to the
+position in continuous mode. Evidence of the people position is given to the
 Supervisor both into a 2D map and an immersive 3D virtual environment (see
 Figure 6).
 
@@ -987,9 +987,9 @@ repository. Community could both use public available extensions or contribute
 by mapping new (smart) objects inside the HIJSON document format.
 
 
-\paragraph*{Acknowledgements}
+\paragraph*{Acknowledgments}
 
-% Anonimizing Acknowledgements:
+% Anonimizing Acknowledgments:
 % A.P. acknowledges the inspiring cooperation on LAR from Antonio DiCarlo and Vadim Shapiro. Thanks are extended to SOGEI, the ICT company of the Italian Ministry of Economy and Finance, for the support provided through several grants. Giulia Clementi has developed the virtual environment of the ward department of the general hospital model.
 
 XXX acknowledges the inspiring cooperation on LAR from Yyyyy and Wwwww. Thanks are extended to xxxxxx, the ICT company xxxxxxx, for the support provided through several grants. Zzzzzz has developed the virtual environment of the ward department of the general hospital model.

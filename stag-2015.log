@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.29)  29 JUL 2015 15:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.29)  29 JUL 2015 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -503,39 +503,39 @@ Package pdftex.def Info: images/sogei2-eps-converted-to.pdf used on input line
 307.
 (pdftex.def)             Requested size: 216.0pt x 139.91248pt.
  [2 <./images/webOfThings.pdf> <./images/sogei2-eps-converted-to.pdf>]
-<images/zigzag1.pdf, id=61, 537.00626pt x 538.01pt>
+<images/zigzag1.pdf, id=62, 537.00626pt x 538.01pt>
 File: images/zigzag1.pdf Graphic file (type pdf)
  <use images/zigzag1.pdf>
 Package pdftex.def Info: images/zigzag1.pdf used on input line 387.
 (pdftex.def)             Requested size: 68.85645pt x 68.98325pt.
 
-<images/zigzag2.pdf, id=62, 495.8525pt x 492.84125pt>
+<images/zigzag2.pdf, id=63, 495.8525pt x 492.84125pt>
 File: images/zigzag2.pdf Graphic file (type pdf)
  <use images/zigzag2.pdf>
 Package pdftex.def Info: images/zigzag2.pdf used on input line 392.
 (pdftex.def)             Requested size: 68.85645pt x 68.43329pt.
 
-<images/zigzag3.pdf, id=63, 562.1pt x 564.1075pt>
+<images/zigzag3.pdf, id=64, 562.1pt x 564.1075pt>
 File: images/zigzag3.pdf Graphic file (type pdf)
  <use images/zigzag3.pdf>
 Package pdftex.def Info: images/zigzag3.pdf used on input line 397.
 (pdftex.def)             Requested size: 68.85645pt x 69.10161pt.
 
-<images/randomdelaunay1.pdf, id=64, 576.1525pt x 576.1525pt>
+<images/randomdelaunay1.pdf, id=65, 576.1525pt x 576.1525pt>
 File: images/randomdelaunay1.pdf Graphic file (type pdf)
 
 <use images/randomdelaunay1.pdf>
 Package pdftex.def Info: images/randomdelaunay1.pdf used on input line 402.
 (pdftex.def)             Requested size: 68.85645pt x 68.85399pt.
 
-<images/randomdelaunay2.pdf, id=65, 549.05125pt x 549.05125pt>
+<images/randomdelaunay2.pdf, id=66, 549.05125pt x 549.05125pt>
 File: images/randomdelaunay2.pdf Graphic file (type pdf)
 
 <use images/randomdelaunay2.pdf>
 Package pdftex.def Info: images/randomdelaunay2.pdf used on input line 407.
 (pdftex.def)             Requested size: 68.85645pt x 68.84906pt.
 
-<images/randomdelaunay3.pdf, id=66, 595.22375pt x 590.205pt>
+<images/randomdelaunay3.pdf, id=67, 595.22375pt x 590.205pt>
 File: images/randomdelaunay3.pdf Graphic file (type pdf)
 
 <use images/randomdelaunay3.pdf>
@@ -546,28 +546,28 @@ Underfull \hbox (badness 1052) in paragraph at lines 438--440
 \T1/ptm/m/n/9 This scheme works even with the com-pli-cated do-main
  []
 
-<images/minimum-data.pdf, id=88, 1069.63641pt x 218.26564pt>
+<images/minimum-data.pdf, id=90, 1069.63641pt x 218.26564pt>
 File: images/minimum-data.pdf Graphic file (type pdf)
 
 <use images/minimum-data.pdf>
 Package pdftex.def Info: images/minimum-data.pdf used on input line 447.
 (pdftex.def)             Requested size: 216.0pt x 44.07532pt.
 
-<images/minimum-colors-a.pdf, id=89, 492.56363pt x 357.76216pt>
+<images/minimum-colors-a.pdf, id=91, 492.56363pt x 357.76216pt>
 File: images/minimum-colors-a.pdf Graphic file (type pdf)
 
 <use images/minimum-colors-a.pdf>
 Package pdftex.def Info: images/minimum-colors-a.pdf used on input line 451.
 (pdftex.def)             Requested size: 103.67908pt x 75.3015pt.
 
-<images/minimum-colors-b.pdf, id=90, 502.30229pt x 359.81236pt>
+<images/minimum-colors-b.pdf, id=92, 502.30229pt x 359.81236pt>
 File: images/minimum-colors-b.pdf Graphic file (type pdf)
 
 <use images/minimum-colors-b.pdf>
 Package pdftex.def Info: images/minimum-colors-b.pdf used on input line 457.
 (pdftex.def)             Requested size: 103.67908pt x 74.2671pt.
 
-<images/boundary.pdf, id=91, 464.93701pt x 338.94629pt>
+<images/boundary.pdf, id=93, 464.93701pt x 338.94629pt>
 File: images/boundary.pdf Graphic file (type pdf)
 
 <use images/boundary.pdf>
@@ -584,14 +584,14 @@ Underfull \hbox (badness 4819) in paragraph at lines 529--534
 []\T1/ptm/m/n/9 Such struc-tured and se-man-ti-cally an-no-tated build-
  []
 
-<images/input-png.pdf, id=181, 1476.23517pt x 1164.99242pt>
+<images/input-png.pdf, id=183, 1476.23517pt x 1164.99242pt>
 File: images/input-png.pdf Graphic file (type pdf)
 
 <use images/input-png.pdf>
 Package pdftex.def Info: images/input-png.pdf used on input line 545.
 (pdftex.def)             Requested size: 104.76013pt x 82.65993pt.
 
-<images/input-png2.pdf, id=182, 1476.23517pt x 1164.99242pt>
+<images/input-png2.pdf, id=184, 1476.23517pt x 1164.99242pt>
 File: images/input-png2.pdf Graphic file (type pdf)
 
 <use images/input-png2.pdf>
@@ -608,21 +608,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5 <./images/minimum-data.pdf> <./images/minimum-colors-a.pdf> <./images/minimu
 m-colors-b.pdf> <./images/boundary.pdf>]
-<images/input-png7.pdf, id=239, 1065.9825pt x 878.28125pt>
+<images/input-png7.pdf, id=241, 1065.9825pt x 878.28125pt>
 File: images/input-png7.pdf Graphic file (type pdf)
 
 <use images/input-png7.pdf>
 Package pdftex.def Info: images/input-png7.pdf used on input line 608.
 (pdftex.def)             Requested size: 101.30273pt x 83.46439pt.
 
-<images/input-png12.pdf, id=240, 801.99625pt x 604.2575pt>
+<images/input-png12.pdf, id=242, 801.99625pt x 604.2575pt>
 File: images/input-png12.pdf Graphic file (type pdf)
 
 <use images/input-png12.pdf>
 Package pdftex.def Info: images/input-png12.pdf used on input line 609.
 (pdftex.def)             Requested size: 110.37634pt x 83.15712pt.
 
-<images/input-png5.pdf, id=241, 1058.95625pt x 878.28125pt>
+<images/input-png5.pdf, id=243, 1058.95625pt x 878.28125pt>
 File: images/input-png5.pdf Graphic file (type pdf)
 
 <use images/input-png5.pdf>
@@ -630,7 +630,7 @@ Package pdftex.def Info: images/input-png5.pdf used on input line 610.
 (pdftex.def)             Requested size: 216.0pt x 179.13751pt.
  [6 <./images/input-png.pdf> <./images/input-png2.pdf> <./images/input-png7.pdf
 > <./images/input-png12.pdf> <./images/input-png5.pdf>] <images/input-colors.pd
-f, id=304, 860.81194pt x 754.18071pt>
+f, id=306, 860.81194pt x 754.18071pt>
 File: images/input-colors.pdf Graphic file (type pdf)
 
 <use images/input-colors.pdf>
@@ -641,21 +641,21 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 665.
 
-<images/input-png9.pdf, id=305, 498.86375pt x 498.86375pt>
+<images/input-png9.pdf, id=307, 498.86375pt x 498.86375pt>
 File: images/input-png9.pdf Graphic file (type pdf)
 
 <use images/input-png9.pdf>
 Package pdftex.def Info: images/input-png9.pdf used on input line 693.
 (pdftex.def)             Requested size: 70.19821pt x 70.19821pt.
 
-<images/input-png10.pdf, id=306, 470.75874pt x 488.82625pt>
+<images/input-png10.pdf, id=308, 470.75874pt x 488.82625pt>
 File: images/input-png10.pdf Graphic file (type pdf)
 
 <use images/input-png10.pdf>
 Package pdftex.def Info: images/input-png10.pdf used on input line 694.
 (pdftex.def)             Requested size: 70.19414pt x 70.1955pt.
 
-<images/input-png11.pdf, id=307, 544.0325pt x 540.0175pt>
+<images/input-png11.pdf, id=309, 544.0325pt x 540.0175pt>
 File: images/input-png11.pdf Graphic file (type pdf)
 
 <use images/input-png11.pdf>
@@ -675,7 +675,7 @@ o.pdf>
 (epstopdf)             \includegraphics on input line 748.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/pipeline-horizontal-eps-converted-to.pdf, id=379, 803.0pt x 1027.84pt>
+<images/pipeline-horizontal-eps-converted-to.pdf, id=381, 803.0pt x 1027.84pt>
 File: images/pipeline-horizontal-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/pipeline-horizontal-eps-converted-to.pdf>
@@ -686,32 +686,32 @@ n input line 748.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/graph-new-1.pdf, id=381, 383.4325pt x 304.13625pt>
+<images/graph-new-1.pdf, id=384, 383.4325pt x 304.13625pt>
 File: images/graph-new-1.pdf Graphic file (type pdf)
 
 <use images/graph-new-1.pdf>
-Package pdftex.def Info: images/graph-new-1.pdf used on input line 772.
+Package pdftex.def Info: images/graph-new-1.pdf used on input line 785.
 (pdftex.def)             Requested size: 47.52026pt x 37.69208pt.
 
-<images/graph-new-2.pdf, id=382, 382.42876pt x 307.1475pt>
+<images/graph-new-2.pdf, id=385, 382.42876pt x 307.1475pt>
 File: images/graph-new-2.pdf Graphic file (type pdf)
 
 <use images/graph-new-2.pdf>
-Package pdftex.def Info: images/graph-new-2.pdf used on input line 777.
+Package pdftex.def Info: images/graph-new-2.pdf used on input line 790.
 (pdftex.def)             Requested size: 47.52026pt x 38.16368pt.
 
-<images/graph-new-3.pdf, id=383, 382.42876pt x 308.15125pt>
+<images/graph-new-3.pdf, id=386, 382.42876pt x 308.15125pt>
 File: images/graph-new-3.pdf Graphic file (type pdf)
 
 <use images/graph-new-3.pdf>
-Package pdftex.def Info: images/graph-new-3.pdf used on input line 782.
+Package pdftex.def Info: images/graph-new-3.pdf used on input line 795.
 (pdftex.def)             Requested size: 47.52026pt x 38.2884pt.
 
-<images/graph-new-4.pdf, id=384, 380.42125pt x 306.14375pt>
+<images/graph-new-4.pdf, id=387, 380.42125pt x 306.14375pt>
 File: images/graph-new-4.pdf Graphic file (type pdf)
 
 <use images/graph-new-4.pdf>
-Package pdftex.def Info: images/graph-new-4.pdf used on input line 787.
+Package pdftex.def Info: images/graph-new-4.pdf used on input line 800.
 (pdftex.def)             Requested size: 47.52026pt x 38.23984pt.
 Package epstopdf Info: Source file: <images/element-class-node.eps>
 (epstopdf)                    date: 2015-07-28 11:52:36
@@ -725,7 +725,7 @@ eps-converted-to.pdf images/element-class-node.eps>
 (epstopdf)             \includegraphics on input line 818.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/element-class-node-eps-converted-to.pdf, id=386, 1027.84pt x 200.75pt>
+<images/element-class-node-eps-converted-to.pdf, id=388, 1027.84pt x 200.75pt>
 File: images/element-class-node-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/element-class-node-eps-converted-to.pdf>
@@ -738,46 +738,46 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8 <./images/pipeline-horizontal-eps-converted-to.pdf> <./images/graph-new-1.pd
 f> <./images/graph-new-2.pdf> <./images/graph-new-3.pdf> <./images/graph-new-4.
-pdf>] <images/five1.pdf, id=440, 551.05875pt x 455.7025pt>
+pdf>] <images/2D-3D.pdf, id=442, 1261.71375pt x 468.75125pt>
+File: images/2D-3D.pdf Graphic file (type pdf)
+
+<use images/2D-3D.pdf>
+Package pdftex.def Info: images/2D-3D.pdf used on input line 842.
+(pdftex.def)             Requested size: 216.0pt x 80.24455pt.
+ <images/five1.pdf, id=443, 551.05875pt x 455.7025pt>
 File: images/five1.pdf Graphic file (type pdf)
 
 <use images/five1.pdf>
-Package pdftex.def Info: images/five1.pdf used on input line 870.
+Package pdftex.def Info: images/five1.pdf used on input line 878.
 (pdftex.def)             Requested size: 68.04053pt x 56.26036pt.
- <images/five2.pdf, id=441, 468.75125pt x 330.23375pt>
+ <images/five2.pdf, id=444, 468.75125pt x 330.23375pt>
 File: images/five2.pdf Graphic file (type pdf)
 
 <use images/five2.pdf>
-Package pdftex.def Info: images/five2.pdf used on input line 875.
+Package pdftex.def Info: images/five2.pdf used on input line 883.
 (pdftex.def)             Requested size: 78.84119pt x 55.53935pt.
- <images/five3.pdf, id=442, 603.25375pt x 600.2425pt>
+ <images/five3.pdf, id=445, 603.25375pt x 600.2425pt>
 File: images/five3.pdf Graphic file (type pdf)
 
 <use images/five3.pdf>
-Package pdftex.def Info: images/five3.pdf used on input line 880.
+Package pdftex.def Info: images/five3.pdf used on input line 888.
 (pdftex.def)             Requested size: 55.08105pt x 54.798pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/2D-3D.pdf, id=443, 1261.71375pt x 468.75125pt>
-File: images/2D-3D.pdf Graphic file (type pdf)
- <use images/2D-3D.pdf>
-Package pdftex.def Info: images/2D-3D.pdf used on input line 902.
-(pdftex.def)             Requested size: 216.0pt x 80.24455pt.
-
 
 LaTeX Warning: Reference `Framework for Indoor mapping in Virtual Environments'
- on page 9 undefined on input line 925.
+ on page 9 undefined on input line 926.
 
-<images/ward2.png, id=444, 3725.92pt x 1204.5pt>
+<images/ward2.png, id=446, 3725.92pt x 1204.5pt>
 File: images/ward2.png Graphic file (type png)
  <use images/ward2.png>
-Package pdftex.def Info: images/ward2.png used on input line 936.
+Package pdftex.def Info: images/ward2.png used on input line 937.
 (pdftex.def)             Requested size: 456.0pt x 147.40091pt.
 
-[9 <./images/element-class-node-eps-converted-to.pdf> <./images/five1.pdf> <./i
-mages/five2.pdf> <./images/five3.pdf> <./images/2D-3D.pdf>] (./stag-2015.bbl
+[9 <./images/element-class-node-eps-converted-to.pdf> <./images/2D-3D.pdf> <./i
+mages/five1.pdf> <./images/five2.pdf> <./images/five3.pdf>] (./stag-2015.bbl
 (./stag-2015.brf)
 \tf@brf=\write3
 \openout3 = `stag-2015.brf'.
@@ -850,34 +850,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--142
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1005.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1006.
  [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1005.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1006.
  (./stag-2015.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1005.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1005.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1006.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1006.
 
+Package rerunfilecheck Info: File `stag-2015.brf' has not changed.
+(rerunfilecheck)             Checksum: BF0F3AFA6C9E73BD467B687F9C99BE34;1119.
 
-
-Package rerunfilecheck Warning: File `stag-2015.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `stag-2015.brf':
-(rerunfilecheck)             Before: A9844CFED9E0C8446075D31E20E778D0;1119
-(rerunfilecheck)             After:  BF0F3AFA6C9E73BD467B687F9C99BE34;1119.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1005.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1006.
  ) 
 Here is how much of TeX's memory you used:
- 9136 strings out of 493304
- 137967 string characters out of 6139871
- 241763 words of memory out of 5000000
- 12325 multiletter control sequences out of 15000+600000
+ 9137 strings out of 493304
+ 137982 string characters out of 6139871
+ 241805 words of memory out of 5000000
+ 12326 multiletter control sequences out of 15000+600000
  56144 words of font info for 93 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  36i,12n,44p,917b,962s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -894,10 +886,10 @@ share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on stag-2015.pdf (11 pages, 14580489 bytes).
+Output written on stag-2015.pdf (11 pages, 14580571 bytes).
 PDF statistics:
- 628 PDF objects out of 1000 (max. 8388607)
- 467 compressed objects within 5 object streams
+ 629 PDF objects out of 1000 (max. 8388607)
+ 468 compressed objects within 5 object streams
  86 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
