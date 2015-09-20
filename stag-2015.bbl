@@ -52,6 +52,17 @@
 \newblock In \emph{Research topics in functional programming}. Addison-Wesley
   Longman Publishing Co., Inc., Boston, MA, {USA}, 1990, pp.~219--247.
 
+\bibitem[CK94]{Carrar:1994:KCA:561911}
+\textsc{Carrara G., Kalay Y.~E.} (Eds.):
+\newblock \emph{Knowledge-Based Computer-Aided Architectural Design}.
+\newblock Elsevier Science Inc., New York, NY, {USA}, 1994.
+
+\bibitem[CP80]{carrara:80}
+\textsc{Carrara G., Paoluzzi A.}:
+\newblock \emph{A System Approach to Building Program Planning}.
+\newblock Tech. Rep. CABD-Lab 80-02, Inst. of Architecture, Building and Town
+  Planning, Sapienza University of Rome, 1980.
+
 \bibitem[DPS14]{Dicarlo:2014:TNL:2543138.2543294}
 \textsc{Dicarlo A., Paoluzzi A., Shapiro V.}:
 \newblock Linear algebraic representation for topological structures.
@@ -65,6 +76,15 @@
 \newblock \emph{BIM Handbook: A Guide to Building Information Modeling for
   Owners, Managers, Designers, Engineers and Contractors}.
 \newblock Wiley Publishing, 2008.
+\newblock URL:
+  \url{http://eu.wiley.com/WileyCDA/WileyTitle/productCd-0470541377.html}.
+
+\bibitem[Ger96]{gero:1996}
+\textsc{Gero J.} (Ed.):
+\newblock \emph{Advances in Formal Design Methods for CAD}.
+\newblock Chapman \& Hall, New York, NY, {USA}, 1996.
+\newblock \href {http://dx.doi.org/10.1007/978-0-387-34925-1}
+  {\path{doi:10.1007/978-0-387-34925-1}}.
 
 \bibitem[GGM12]{6418876}
 \textsc{Gotlib D., Gnat M., Marciniak J.}:
@@ -75,6 +95,18 @@
 \newblock \href {http://dx.doi.org/10.1109/IPIN.2012.6418876}
   {\path{doi:10.1109/IPIN.2012.6418876}}.
 
+\bibitem[Ghr14]{ghrist:2014}
+\textsc{Ghrist R.}:
+\newblock \emph{Elementary Applied Topology}, 1.0~ed.
+\newblock Createspace, 2014.
+\newblock URL: \url{https://www.math.upenn.edu/~ghrist/notes.html}.
+
+\bibitem[Hat02]{hatcher:2002}
+\textsc{Hatcher A.}:
+\newblock \emph{Algebraic Topology}.
+\newblock Cambridge University Press, 2002.
+\newblock URL: \url{https://books.google.it/books?id=BjKs86kosqgC}.
+
 \bibitem[HT73]{Hopcroft:1973:AEA:362248.362272}
 \textsc{Hopcroft J., Tarjan R.}:
 \newblock Algorithm 447: Efficient algorithms for graph manipulation.
@@ -82,10 +114,17 @@
 \newblock URL: \url{http://doi.acm.org/10.1145/362248.362272}, \href
   {http://dx.doi.org/10.1145/362248.362272} {\path{doi:10.1145/362248.362272}}.
 
+\bibitem[ind13]{indoorjson:2013}
+\textsc{indoor.io}:
+\newblock Indoorjson specification and validator.
+\newblock \url{https://github.com/asaarinen/indoor-json}, 2013.
+\newblock Accessed: 2015-03-23.
+
 \bibitem[Pao03]{Paoluzzi2003a}
 \textsc{Paoluzzi A.}:
 \newblock \emph{Geometric Programming for Computer Aided Design}.
 \newblock John Wiley \& Sons, Chichester, {UK}, 2003.
+\newblock URL: \url{http://onlinelibrary.wiley.com/book/10.1002/0470013885}.
 
 \bibitem[PDFJ15]{cadanda:2015}
 \textsc{Paoluzzi A., DiCarlo A., Furiani F., Jirik M.}:
@@ -114,7 +153,7 @@
 \bibitem[PSB15]{webOfThings:2015}
 \textsc{Pendyala V.~S., Shim S.~S., Bussler C.}:
 \newblock The web that extends beyond the world.
-\newblock \emph{IEEE Computer} (May 2015).
+\newblock \emph{{IEEE} Computer} (May 2015).
 
 \bibitem[Spo15]{Sportillo:2015}
 \textsc{Sportillo M.}:
@@ -135,7 +174,7 @@
 \newblock Optimization of sparse matrix-vector multiplication on emerging
   multicore platforms.
 \newblock In \emph{Proceedings of the 2007 ACM/IEEE conference on
-  Supercomputing} (New York, NY, USA, 2007), SC '07, ACM, pp.~38:1--38:12.
+  Supercomputing} (New York, NY, {USA}, 2007), SC '07, Acm, pp.~38:1--38:12.
 \newblock URL: \url{http://doi.acm.org/10.1145/1362622.1362674}, \href
   {http://dx.doi.org/10.1145/1362622.1362674}
   {\path{doi:10.1145/1362622.1362674}}.

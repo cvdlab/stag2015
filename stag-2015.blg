@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: stag-2015.aux
 The style file: eg-alpha-doi.bst
@@ -8,44 +8,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: doceng2015.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 19 entries,
+You've used 25 entries,
             3585 wiz_defined-function locations,
-            890 strings with 10314 characters,
-and the built_in function-call counts, 10637 in all, are:
-= -- 1095
-> -- 448
-< -- 5
-+ -- 161
-- -- 156
-* -- 766
-:= -- 1544
-add.period$ -- 51
-call.type$ -- 19
-change.case$ -- 127
-chr.to.int$ -- 19
-cite$ -- 19
-duplicate$ -- 332
-empty$ -- 890
-format.name$ -- 177
-if$ -- 2563
+            929 strings with 11241 characters,
+and the built_in function-call counts, 13166 in all, are:
+= -- 1351
+> -- 524
+< -- 10
++ -- 182
+- -- 176
+* -- 897
+:= -- 1904
+add.period$ -- 69
+call.type$ -- 25
+change.case$ -- 155
+chr.to.int$ -- 25
+cite$ -- 25
+duplicate$ -- 435
+empty$ -- 1142
+format.name$ -- 207
+if$ -- 3209
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 17
-newline$ -- 110
-num.names$ -- 59
-pop$ -- 204
+missing$ -- 23
+newline$ -- 146
+num.names$ -- 79
+pop$ -- 271
 preamble$ -- 1
-purify$ -- 150
+purify$ -- 188
 quote$ -- 0
-skip$ -- 653
+skip$ -- 842
 stack$ -- 0
-substring$ -- 437
-swap$ -- 98
-text.length$ -- 5
-text.prefix$ -- 5
+substring$ -- 480
+swap$ -- 113
+text.length$ -- 10
+text.prefix$ -- 9
 top$ -- 0
-type$ -- 161
+type$ -- 195
 warning$ -- 0
-while$ -- 75
-width$ -- 21
-write$ -- 268
+while$ -- 89
+width$ -- 27
+write$ -- 356

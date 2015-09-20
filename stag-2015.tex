@@ -53,26 +53,26 @@
 
 
 \title[HIJSON: interactive indoor mapping]{HIJSON: cartographic document for web modeling 
-of interactive indoor mapping}
+of Interactive Indoor Mapping}
 
-% \author[F. Spini, M. Sportillo, M. Virgadamo, E. Marino, A. Bottaro, \& A. Paoluzzi]
-%        {F. Spini$^{1}$, M. Sportillo$^{1}$, M. Virgadamo$^{1}$, E. Marino$^{1}$, A. Bottaro $^{2}$ and A. Paoluzzi$^{3}$
-% %        S. Spencer$^2$\thanks{Chairman Siggraph Publications Board}
-%         \\
-% % For Computer Graphics Forum: Please use the abbreviation of your first name.
-%          $^1$Dipartimento di Ingegneria, Universit\`a Roma Tre, Rome, Italy \\
-%          $^2$Sogei S.p.A., Ricerca e Sviluppo, Rome, Italy \\
-%          $^3$Dipartimento di Matematica e Fisica, Universit\`a Roma Tre, Rome, Italy 
-% %        $^2$ Another Department to illustrate the use in papers from authors
-% %             with different affiliations
-%        }
+ \author[F. Spini, M. Sportillo, M. Virgadamo, E. Marino, A. Bottaro, \& A. Paoluzzi]
+        {F. Spini$^{1}$, M. Sportillo$^{1}$, M. Virgadamo$^{1}$, E. Marino$^{1}$, A. Bottaro $^{2}$ and A. Paoluzzi$^{3}$
+ %        S. Spencer$^2$\thanks{Chairman Siggraph Publications Board}
+         \\
+ % For Computer Graphics Forum: Please use the abbreviation of your first name.
+          $^1$Dipartimento di Ingegneria, Universit\`a Roma Tre, Rome, Italy \\
+          $^2$Sogei S.p.A., Ricerca e Sviluppo, Rome, Italy \\
+          $^3$Dipartimento di Matematica e Fisica, Universit\`a Roma Tre, Rome, Italy 
+ %        $^2$ Another Department to illustrate the use in papers from authors
+ %             with different affiliations
+        }
 
-% Anonimizing authors
-\author[X. Xxxxx, Y. Yyyy, W. Wwww, \& Z. Zzzzz]
-       {X. Xxxxx$^{1}$, Y. Yyyy$^{1}$, W. Wwww$^{1}$, Z. Zzzzz$^{1}$
-        \\
-      $^1$Department of XXXXXX, YYYY, ZZZZ
-       }
+%% Anonimizing authors
+%\author[X. Xxxxx, Y. Yyyy, W. Wwww, \& Z. Zzzzz]
+%       {X. Xxxxx$^{1}$, Y. Yyyy$^{1}$, W. Wwww$^{1}$, Z. Zzzzz$^{1}$
+%        \\
+%      $^1$Department of XXXXXX, YYYY, ZZZZ
+%       }
 
 \nonstopmode
 % ------------------------------------------------------------------------
@@ -187,20 +187,18 @@ of models of objects, sensors or behaviors.
 % Anonimizing footnote: 
 % This work was partially supported by grant 2014/15 from Sogei S.p.A., the ICT company of the Italian Ministry of Economy and Finance.
 
-\section{Introduction\footnote{This work was partially
-supported by grant 2014/15 from  xxxx, the ICT company xxxxxxxxx.}}
+\section{Introduction\footnote{This work was partially supported by grant 2014/15 from Sogei S.p.A., the ICT company of the Italian Ministry of Economy and Finance.}}
 
 For environments with massive presence of sensor-equipped (or ``smart")
-objects, which realize the IoT (Internet of Things), an \emph{interactive indoor
-mapping} represents the ideal integrated interface for IoT monitoring systems.
-To be specific, it can be the container of indoor navigation systems, giving
-the user, to be routed across an indoor environment, the opportunity to
-interact with objects along the suggested paths. Furthermore, in conjunction
-with the advancements in the field of user indoor location, whose efforts are
+objects, which realize the IoT (Internet of Things), an \emph{Interactive Indoor
+Mapping} (IIM) system represents the ideal interface for integrated IoT monitoring.
+To be specific, IIM provides the container of indoor navigation systems, giving also 
+the user, routed across an indoor environment, the opportunity to
+interact with objects along the suggested paths. Furthermore, it exploits the advancements in the field of indoor user's  radio frequency identification and location, whose efforts are
 nowadays focused to realize an integration of positioning systems like GNSS
 (Global Navigation Satellite system), Wi-Fi, Bluetooth and LTE (Long Term
-Evolution), to support continuous outdoor/indoor navigation by means of
-integration of technologies, it represents the most natural interface to
+Evolution).  By supporting continuous outdoor/indoor navigation by means of
+integration of technologies, an IIM system represents the most natural interface to
 perform realtime access monitoring and multi-person tracking. Self-supporting web-based
 technologies and context-aware objects, in conjunction  with
 location systems, represent the enabling components for the scenario (depicted in
@@ -224,6 +222,8 @@ efforts to specify open formats for indoor representation are few and partial,
 and certainly not intended to support the interactive indoor mapping, which is
 conversely the main purpose of this paper.
 
+The work, jointly developed with Sogei S.p.A., an ICT company fully owned by Italian Ministry of Economy and Finance, and the CVDLAB (Computational Visual Design Laboratory) of the ``Roma Tre'' University, is inspired by the needs of Sogei itself, which runs one of the largest data center of Europe, so requiring very strict access control policies, which include the recording and the real-time interaction with man/machine maintenance scenarios. Support for this interactive framework, where realtime awareness of the maintainer position inside the data center helps to reduce intervention times and to increase safety and security, has been chosen as case study of interactive indoor mapping, based on the proposed indoor cartographic format.
+
 Research on the cartographic representation of indoor environments is
 extensive and heterogeneous with respect to the strategies
 applied~\cite{6418876}. Different information sources are used, and accuracy
@@ -235,7 +235,7 @@ Foundation Classes) that describe a building project~\cite{6816739}.  The actual
 standard in terms of geospatial data representation is the GeoJSON
 format~\cite{geojson:2008}, which can be easily used for any type of geographical annotation. In
 some cases it has been slightly adapted to be used in indoor environments: it
-is the case of the IndoorJSON format.
+is the case of the IndoorJSON project~\cite{indoorjson:2013}.
 
 
 
@@ -351,21 +351,19 @@ The geometric modeling of interior spaces of complex buildings and architectural
 \subsection{Background}
 
 \subsubsection*{Architectural modeling} 
-The \emph{architecture} of a \emph{building} is characterized by two interacting and mutually dependent \emph{systems}, respectively relative to (a) the interior/exterior spaces where the humans live and perform their activities and to (b) the manufacts that realize the physical covering of interior spaces and provide the boundaries of exterior spaces. In short, when modeling an urban area including a set of buildings and their indoor spaces, we must consider both the system of \emph{building spaces} and the system of \emph{building components}.
+The \emph{architecture} of a \emph{building} is characterized by two interacting and mutually dependent \emph{systems}, respectively relative to (a) the interior/exterior spaces where the humans live and perform their activities and to (b) the manufacts that realize the physical covering of interior spaces and provide the boundaries of exterior spaces. In short, when modeling an urban area including a set of buildings and their indoor spaces, we must consider both the system of \emph{building spaces} and the system of \emph{building components}~\cite{carrara:80,Carrar:1994:KCA:561911,gero:1996}.
 
 The system of building spaces may be characterized as a partially ordered family $B$ (Building Units) of subsets of elementary spaces $S$ (Space Units). The set $S$ of space units provide a \emph{partition} of the \emph{Building Space}. The set $B$ of building units is a covering, partially ordered by containment, of the Building space providing a hierarchical structure to it.
 
 The system of building components, also called \emph{building fabric}, can be partitioned into the  \emph{building envelope} and the \emph{building partitions}.
-
 The \emph{building envelope} is the physical separator between the conditioned and unconditioned environment of a building, including the resistance to air, water, heat, light, and noise transfer, along to give buildings form, and to provide shelter and security.
-
 The \emph{building partitions}, either horizontal or vertical, enclose the indoor spaces, and are contained within the building envelope. The former are roofs, floors and ceilings; the latter aim to support the horizontal partitions, either massively or by means of a building frame, where the loads are transferred.
 
 \subsubsection*{Cellular complexes and sparse matrices} 
 
-Therefore, to model the indoor space we need to partition the building into \emph{cells} corresponding to the unit spaces, aggregate them to assembly the hierarchical  building units into \emph{cell complexes}, take control of the adjacency relations though suitable \emph{topological operators}, extract the \emph{boundary chains} of either 2D or 3D \emph{chains} of cells, in order to generate the various families of building components, and extract the \emph{coboundary chains} of subsets of 1D cells or 2D cells, to compute the graph of all paths within the building.
+Therefore, to model the indoor space we need to partition the building into \emph{cells} corresponding to the unit spaces, aggregate them to assembly the hierarchical  building units into \emph{cell complexes}, take control of the adjacency relations though suitable \emph{topological operators}, extract the \emph{boundary chains} of either 2D or 3D \emph{chains} of cells, in order to generate the various families of building components~\cite{paoluzziMS:2014}, and extract the \emph{coboundary chains} of subsets of 1D cells or 2D cells, to compute the graph of all paths within the building.
 
-A \emph{cell complex} $X$ is a partition of a compact space $S \subset \E^n$ into compact subsets of points, called \emph{cells}, such that the intersection of every pair of cells is either empty or is a \emph{boundary face} of both. The cells have a \emph{dimension}. 0-cells are topologically equivalent (homeomorphic) to single points (vertices), 1-cells to curves (edges), 2-cells to surfaces (faces) and 3-cells to solids.  The set of $d$-cells is denoted as $X_d$, so that $X$ can be seen as a \emph{stratification} $(X_0, X_1, \ldots, X_d)$. With abuse of language we call $X_h$ the $h$-skeleton of $X$, and $K_h: \{1,2,\ldots,n_h\} \to X_h$ the \emph{indexing maps} of $h$-cells $(0\leq h\leq d)$, where $n_h=|X_h|$. 
+A \emph{cell complex} $X$ is a partition of a compact space $S \subset \E^n$ into compact subsets of points, called \emph{cells}, such that the intersection of every pair of cells is either empty or is a \emph{boundary face} of both~\cite{hatcher:2002,ghrist:2014}. The cells have a \emph{dimension}. 0-cells are topologically equivalent (homeomorphic) to single points (vertices), 1-cells to curves (edges), 2-cells to surfaces (faces) and 3-cells to solids.  The set of $d$-cells is denoted as $X_d$, so that $X$ can be seen as a \emph{stratification} $(X_0, X_1, \ldots, X_d)$. With abuse of language we call $X_h$ the $h$-skeleton of $X$, and $K_h: \{1,2,\ldots,n_h\} \to X_h$ the \emph{indexing maps} of $h$-cells $(0\leq h\leq d)$, where $n_h=|X_h|$. 
 
 
 % \begin{figure*}[htbp] %  figure placement: here, top, bottom, or page
@@ -438,7 +436,7 @@ The \emph{Linear Algebraic Representation} (LAR) scheme~\cite{Dicarlo:2014:TNL:2
 The Linear Algebraic Representation (LAR) scheme uses Combinatorial Cellular Complexes (CCC) as mathematical domain~\cite{Basak:2010} and various compressed representations of sparse matrices~\cite{Williams:2007:OSM:1362622.1362674,gemmexp} as codomain.
 This scheme works even with the complicated domain partitions---with non-convex and/or non-manifold cells, and cells non homeomorphic to balls---that may arise in Building Information Modeling (BIM) and Geographic Information Systems (GIS) applications. 
 
-Simplicial and cuboidal cell complexes provide the standard mesh representation used in most science and engineering simulations, whereas complexes of possibly non-convex or non-contractible cells may be needed to represent the built environment in software applications for the Architecture, Engineering, and Construction (AEC) sector.
+Simplicial and cuboidal cell complexes provide the standard mesh representation used in most science and engineering simulations, whereas complexes of possibly non-convex or non-contractible cells may be needed to represent the built environment in software applications for the Architecture, Engineering, and Construction (AEC) sector~\cite{paoluzziMS:2014}.
 
 
  \begin{figure}[!h]
@@ -482,7 +480,7 @@ The Python prototypal implementation of \href{https://github.com/cvdlab/lar-cc}{
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 \subsection{Hierarchical cellular complex}
 
-The linear chain spaces $C_h$ ($0\leq h\leq d$) can be enriched with a preorder structure, induced by subset containment, providing for a richer denotation of the family of subsets of cells, which  corresponds to the set union of \emph{BuildingUnits}, and \emph{BuildingSpaces}. A corresponding set of names is also introduced, so that every substructure, at every hierarchical level, is associated to a unique ID, generated by concatenation of ancestor names along the (unique) path from the hierarchy root to the current node in the traversal of the hierarchy.  Both the 2-cells and the 1-cells are inserted in the hierarchy. The former in region of functional requirements, the latter to automatically select the building components where to automatically insert the openings. Doors and windows are so automatically associated to appropriate hierarchical 1-chains. 
+The linear chain spaces $C_h$ ($0\leq h\leq d$) can be enriched with a preorder structure, induced by subset containment, providing for a richer denotation of the family of subsets of cells, which  corresponds to the set union of \emph{BuildingUnits}, and \emph{BuildingSpaces}. A corresponding set of names is also introduced, so that every substructure, at every hierarchical level, is associated to a unique ID, generated by concatenation of ancestor names along the (unique) path from the hierarchy root to the current node in the traversal of the hierarchy.  Both the 2-cells and the 1-cells are inserted in the hierarchy. The former because of functional requirements, the latter to automatically select the building components where to automatically insert the openings. Doors and windows are so automatically associated to appropriate hierarchical 1-chains. 
 
 \subsubsection*{Boundary and coboundary operators}
 
@@ -504,11 +502,12 @@ Two main advantages can be found in a hierarchical modeling approach. Each eleme
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 \subsection{Production of HIJSON document}
 
-Our RAD of building models is 
-obtained via a combination of server-side and client-side computing
+The RAD of building models is produced via a combination of server-side and client-side computing,
 based on text-based geometric computing and interactive data 
-transformation via graphical input actions. We therefore distinguish
-between:
+transformation via graphical input actions. Server-side, some input floorplan images are transformed into a 2.5D cellular complex, until to produce the textual HIJSON document, according to the GeoJSON format.
+Client-side, the HIJSON document is received via http, parsed and transformed into either a 2D map, or a 3D extruded solid model, or both, depending on the type of device and/or the UI status.
+
+Within the transformation process, we therefore distinguish between:
 
 \begin{enumerate}
 \def\labelenumi{(\alph{enumi})}
@@ -537,6 +536,11 @@ Such structured and semantically annotated
   inside the real building.
 \end{enumerate}
 
+It is worth noting that the whole construction of the 2.5D model---i.e.~the cellular 2-complex embedded in 3D---is made using normalized local coordinates, where the root coordinates are contained in the $[0,1]^3$ interval. The transformation to geographical cylindrical coordinates is executed at generation time of the HIJSON document. To get the best numeric accuracy, the planar rototranslation component depends on three extreme points of the building plan, whereas the $z$-scaling needs the knowledge of the building height. The affine transform is propagated to each node using the semantics of the \texttt{Struct} primitive, analogous to the one of the old, good PHIGS graphics standard.
+
+
+
+
 \subsubsection*{From raster images to vector drawings}
 
 \begin{figure}[!h]
@@ -553,16 +557,16 @@ Such structured and semantically annotated
   \label{fig:input-png:b}
   \end{subfigure}
  
-  \caption{Input image: (a) \texttt{.png} input file; (b) user-interpretation of plans as wire-frame drawings (in red)}
+  \caption{Input image: (a) \texttt{.png} input file of a typical floor-plan of a real business tower; (b) user-interpretation of plans as wire-frame drawings (in red).}
   \label{fig:input-png}
  \end{figure}
 
 The architectural shape is introduced in the system using a rasterization of its plan drawings.
-In the test-case we used a \texttt{.png} raster file of the first building floor, and supposed the layout constant on the various storeys. Of course, the number of input files will correspond to the number of different floor plans. In Figure~\ref{fig:input-png:a} and image is shown of the input image.
+In the test-case\footnote{Performed on a real business tower in Rome.} we used a \texttt{.png} raster file of the first building floor, and supposed the layout constant on the various storeys. Of course, the number of input files will correspond to the number of different floor plans. In Figure~\ref{fig:input-png:a} an image is shown of the input image.
 
-An user-interpretation of plans as wire-frame drawings is performed (In Figure~\ref{fig:input-png:b}, using some interactive drawing application, producing one or more \texttt{.svg} files, can be written and read by most
+An user-interpretation of plans as wire-frame drawings is performed (see Figure~\ref{fig:input-png:b}), by using some interactive drawing application, so producing one or more \texttt{.svg} files, that can be written and read by most
 interactive drawing applications, both commercial and open-source. Such
-files can be also searched, indexed, scripted, compressed, and scripted  using JavaScript. The mechanism of \emph{layers}, if available, is useful to have the building plans correspond exactly. A metric scale is not fixed in advance, since the geometric representation of the building will be subsequently transformed to any useful scale and position by using an affine transformation matrix.
+files can be also searched, indexed, scripted, compressed, and scripted  using JavaScript. The mechanism of \emph{layers}, if available, is useful to have the building plans correspond exactly. A metric scale is not fixed in advance, since the geometric representation of the building will be subsequently transformed to any useful scale, position and orientation by using an affine transformation matrix.
 
 In order to guarantee a standard quality of \emph{datum} for any generated
 virtual environment, while at the same time to provide the maximum web 
@@ -595,12 +599,12 @@ data.
 At the end of the classification, with same geometric object possibly
 inserted in several different buckets, a \emph{brute-force} pairwise intersection
 is applied to each final subset. Finally, duplicated intersection
-points are removed by sorting, and a 1-dimensional LAR data structure is generated,
+points are removed by sorting a fixed-format coded representation, and a 1-dimensional LAR data structure is generated,
 with 1-cells given by the split line segments.
 
 \paragraph*{Maximal biconnected
 subgraph}\label{computation-of-the-maximal-biconnected-subgraph}
-It is worth noting that a one-dimensional LAR model is a pair \texttt{(V,EV)} made by an array \texttt{V} of vertex coordinates and by an array \texttt{EV} of pairs of vertex indices, i.e., it is a standard graph representation. the maximal biconnected subgraph is then computed, in order to remove all dangling edges and paths and to generate a plane partition into a set of quasi-disjoint 2D regions. A standard implementation of the Hopcroft-Tarjan algorithm for biconnected graph components~\cite{Hopcroft:1973:AEA:362248.362272} is used for this purpose.
+It is worth noting that a one-dimensional LAR model is a pair \texttt{(V,EV)} made by an array \texttt{V} of vertex coordinates and by an array \texttt{EV} of pairs of vertex indices, i.e., it is a standard graph representation. the maximal biconnected subgraph is then computed, in order to remove all dangling edges and paths, possibly generated by numerical inaccuracies and user input errors, and to generate a plane partition into a set of quasi-disjoint 2D regions. A python  implementation of the standard Hopcroft-Tarjan algorithm for biconnected graph components~\cite{Hopcroft:1973:AEA:362248.362272} is used for this purpose.
 
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
@@ -608,7 +612,7 @@ It is worth noting that a one-dimensional LAR model is a pair \texttt{(V,EV)} ma
    \includegraphics[width=0.469\linewidth]{images/input-png7} 
    \includegraphics[width=0.511\linewidth]{images/input-png12} 
    \includegraphics[width=\linewidth]{images/input-png5} 
-   \caption{Exploded images of hierarchical structures: (a) model floorplan; (b) 2.5D assembly of floorplans. (c) The integer indexing \texttt{V,E,F} (i.e.~$k_0$, $k_1$, $k_2$) of 0-, 1- and 2-cells.}
+   \caption{Exploded images of hierarchical structures: (a)~1-skeleton of the LAR model floorplan; (b) 2.5D assembly of floorplans. (c) The integer indexing \texttt{V,E,F} (a.k.a.~$K_0, K_1, K_2$) of 0-,1- and 2-cells.}
    \label{fig:input-png0}
 \end{figure}
 
@@ -620,8 +624,8 @@ lines is then computed by traversing in
 counter-clockwise order the generated subgraphs, to report the
 2-dimensional cells of the plane partition.
 In particular, let us consider the binary characteristic matrix \texttt{EV} as the storage for the incidence angles described below, and remark that we represent the edges on the
-rows, and the vertices on the columns of the matrix, so that \texttt{EV[h]$=$[K$_1$,K$_2$]} implies $e_h = (v_{k_1},v_{k_2})$ 
-and \texttt{EV[h,k$_1$]} is the value stored in 
+rows, and the vertices on the columns of the matrix, so that \texttt{EV[h]$=$[k$_1$,k$_2$]} implies $e_h = (v_{k_1},v_{k_2})$ 
+and \texttt{EV[h,k$_i$]}, $i\in\{1,2\}$, is the value stored in 
 \texttt{COO$(h,k_i,\alpha)$} when representing the sparse matrix \texttt{EV} in \emph{coordinate format}. 
 Hence, we can readily reconstruct the topology of 2-cells by
 associating to each non-zero (sparse matrix) element
@@ -638,31 +642,31 @@ including the exterior cycle. This traversal provides the needed basis for 2-cel
 
 \paragraph*{Hierarchy of chains}
 
-The next computational stage assign a semantics to 2-cells and to some significant subsets of 1-cells. For this purpose we employ the concept of \emph{hierarchy}.
-In mathematics, a hierarchy is a set-theoretical concept, defined as a \emph{preorder} defined on a set. A hierarchy is often defined as either a partially or totally ordered set. All partial orders and equivalence relations are preorders, but preorders are more general. 
-In computer science, the term usually refers to \emph{partially ordered sets}, whose elements are classes of objects of growing complexity. In this case the preorder that defines the hierarchy is the \emph{relation of containment} between classes of objects. In this sense we speak of \emph{hierarchical chains} as a family of subsets of cells partially ordered by containment.
+The next computational stage assigns a semantics to 2-cells and to some significant subsets of 1-cells. For this purpose we employ the concept of \emph{hierarchy}.
+In mathematics, a hierarchy is a set-theoretical concept, defined as a \emph{preorder} defined on a set. A hierarchy is often defined as either a partially or totally ordered set. All partial orders and equivalence relations are preorders, but the converse is not true. 
+In computer science, the term usually refers to \emph{partially ordered sets}, whose elements are classes of objects of growing complexity. In our case the preorder that defines the space hierarchy is the \emph{relation of containment} between classes of objects. In this sense we speak of \emph{hierarchical chains} as a family of chains (subsets of cells) partially ordered by containment.
 
 \paragraph*{Semantics of chains}
 
-The hierarchy of building units, follows from the functional meaning of these, is illustrated by colors in Figure~\ref{fig:input-png6}. We may distinguish in the model floorplan of our model building five 2-chains, orderly corresponding to \emph{north wing}, \emph{south wing}, \emph{east wing}, \emph{west  wing}, and \emph{floor lobby} of the building. The four wings are further subdivided into six 2-chains: \emph{rightside}, \emph{leftside}, \emph{corridor}, \emph{elevators}, \emph{staircases}, and \emph{restrooms}. Each of the latter directly correspond to a subset of 2-cells. The hierarchy of spaces is described as a (nested) dictionary in \texttt{Python}, and is used to compute  a unique id for each and every \emph{space unit} and \emph{building unit}, simply by executing the concatenation of name strings on every path of the hierarchy tree, starting from the root node.
+The hierarchy of building units, as follows from the functional meaning of these, is illustrated by colors in Figure~\ref{fig:input-png6}. We may distinguish in the model floorplan of our model building five 2-chains, orderly corresponding to \emph{north wing}, \emph{south wing}, \emph{east wing}, \emph{west  wing}, and \emph{floor lobby} of the building. The four wings are further subdivided into six 2-chains: \emph{rightside}, \emph{leftside}, \emph{corridor}, \emph{elevators}, \emph{staircases}, and \emph{restrooms}. Each of the latter directly correspond to a subset of 2-cells. The hierarchy of spaces is described as a (nested) dictionary in \texttt{Python}, and is used to compute  a unique id for each and every \emph{space unit} and \emph{building unit}, simply by executing the concatenation of name strings on every path of the hierarchy tree, starting from the root node.
 
 \begin{figure}[htbp] %  figure placement: here, top, bottom, or page
    \centering
    \includegraphics[width=0.7\linewidth]{images/input-colors} 
-   \caption{Hierarchical partition of 2-cells. Any hierarchical structuring is allowed.}
+   \caption{Hierarchical partition of 2-cells. Any hierarchical structuring is allowed. The test-case is performed on a real business tower.}
    \label{fig:input-png6}
 \end{figure}
 
 \subsubsection*{Traversal of hierarchical building structure}
 
-The representation chosen for structure networks with LAR (in the \texttt{lar-cc} module) is the serialised one, consisting in ordered sequences (lists) of either (a) LAR models, or (b) affine transformations, or (c) references to other structures, either directly nested within some given structure, or called by reference (name) from within the list.
+The representation chosen for structure networks with LAR (in the \texttt{lar-cc} module) is the serialised one, consisting in ordered sequences (lists) of either (a) LAR models, or (b)~affine transformations, or (c) references to other structures, either directly nested within some given structure, or called by reference (name) from within the list.
 In our test-case the root of the structure network is an object of \texttt{Struct} class, with name ``Tower" and type ``Building". 
 
 The usual aim of a structure network traversal is to transform every component structure, usually defined in a local coordinate system, into the reference frame of the structure as a whole, normally corresponding with the reference system of the structure's root. 
 In our case, the traversal of the
 \emph{the ``Tower" structure produces as output the \texttt{HIJSON} model document}, discussed in the next section. 
 
-\begin{lstlisting}[language=json, label={lst:feature-collection-example}, captionpos=b, basicstyle=\ttfamily\scriptsize, caption=Algorithm producing a HIJSON file.]
+\begin{lstlisting}[language=json, label={lst:feature-collection-example}, captionpos=b, basicstyle=\ttfamily\scriptsize, caption=Algorithm producing a HIJSON file from an \texttt{obj} value.]
 def print_traversal(file, obj, parent_id='', level=0): 
   if is_struct(obj):
     if is_wall(obj):
@@ -704,7 +708,7 @@ The HIJSON document is composed by a configuration section, followed by one or
 more FeatureCollections, containing the actual data.
 
 
-The configuration part includes parameters and settings needed for building
+The configuration part includes parameters and settings needed for building a 
 representation in the form of a JSON Object. One of the core information in
 this section is defined by the correspondence between three points of the
 local coordinate system and three points of the real world, expressed in
@@ -847,7 +851,6 @@ extensions of the Toolkit capabilities.
 The \emph{Framework for Indoor mapping in Virtual Environments} (FIVE), responds to the needs of an extendable, customizable,
 and scalable web framework which provides at the same time IoT monitoring,
 real-time multi-person tracking and cross-storey user navigation.
-
 Expandability and customizability derive from both design choices and HIJSON
 inherent characteristics, i.e. the possibility of semantic extensions.
 Scalability is directly borrowed from technologies used for software
@@ -902,7 +905,8 @@ environment through a desktop workstation, the Explorer has a smartphone
 available and needs to be routed across the building. In both cases, the web
 platform ensures a perfect alignment with the BYOD (Bring Your Own Device)
 approach, nowadays often supported by companies that encourage employees to
-use personal devices.
+use personal devices. The numeric accuracy of our business tower virtual model gives an
+average error of about $10\,cm$. This one strongly depends on the resolution and size of the display of the device used for the interactive conversion of floorplans from raster images to svg vector drawigns. 
 
 
 \subsection{IoT monitoring}
@@ -923,7 +927,7 @@ Monitoring different smart objects may require different ways to visualize
 and/or send data and commands. In particular, the user interface is
 characterized by a dual-display mode, that allows the user to see at the same
 time a 2D map that gives an overall glance in a simplified plan, and a 3D
-virtual environment to navigate into, as shown in Figure~\ref{Framework for Indoor mapping in Virtual Environments}.
+virtual environment to navigate into, as shown in Figure~\ref{fig:hospital}.
 
 Alongside with typical smart objects, suitable to deal with like thermostats,
 where the user can read the room temperature and turn the heating on/off,
@@ -936,7 +940,7 @@ database.
    \centering
    \includegraphics[width=\textwidth]{images/ward2} 
    \caption{The modeling of two ward departments in a general hospital.}
-   \label{fig:example}
+   \label{fig:hospital}
 \end{figure*}
 
 \subsection{Realtime multi-person tracking} Realtime multi-person tracking
@@ -986,13 +990,14 @@ document format and the web framework, might be easily collected in a public
 repository. Community could both use public available extensions or contribute
 by mapping new (smart) objects inside the HIJSON document format.
 
+The main limitation of the present approach may be found in the client-side transformation of the 2.5D cellular model performed via simple polyhedral extrusions of chain descriptions made by polygons and polylines. This 3D model generation is not extendable to more unusual architectures, like, e.g.~hanging structures. Anyway, even the most creative shapes could be directly modeled server-side, and inserted within HIJSON files via the same mechanism currently used for furnitures and smart-devices. We plan to inser this generalization with the publication of the HIJSON format.
+
 
 \paragraph*{Acknowledgments}
 
-% Anonimizing Acknowledgments:
-% A.P. acknowledges the inspiring cooperation on LAR from Antonio DiCarlo and Vadim Shapiro. Thanks are extended to SOGEI, the ICT company of the Italian Ministry of Economy and Finance, for the support provided through several grants. Giulia Clementi has developed the virtual environment of the ward department of the general hospital model.
+We would like to thank the anonimous referees for their valuable comments and suggestions.
+A.P. acknowledges the inspiring cooperation on LAR from Antonio DiCarlo and Vadim Shapiro. Thanks are extended to SOGEI, the ICT company of the Italian Ministry of Economy and Finance, for the support provided through several grants. Giulia Clementi has developed the virtual environment of the ward department of the general hospital model. 
 
-XXX acknowledges the inspiring cooperation on LAR from Yyyyy and Wwwww. Thanks are extended to xxxxxx, the ICT company xxxxxxx, for the support provided through several grants. Zzzzzz has developed the virtual environment of the ward department of the general hospital model.
 %-------------------------------------------------------------------------
 
 \balance
