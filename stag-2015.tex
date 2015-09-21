@@ -238,6 +238,61 @@ some cases it has been slightly adapted to be used in indoor environments: it
 is the case of the IndoorJSON project~\cite{indoorjson:2013}.
 
 
+\begin{figure*}[htbp] %  figure placement: here, top, bottom, or page
+   \centering
+\hspace{-1.5mm}   
+   \begin{subfigure}[b]{0.165\textwidth}
+   \includegraphics[width=\textwidth]{images/emergency/13}
+   \end{subfigure}
+\hspace{-1.5mm}   
+   \begin{subfigure}[b]{0.165\textwidth}
+   \includegraphics[width=\textwidth]{images/emergency/0}
+   \end{subfigure}
+\hspace{-1.5mm}   
+   \begin{subfigure}[b]{0.165\textwidth}
+   \includegraphics[width=\textwidth]{images/emergency/4}
+   \end{subfigure}
+\hspace{-1.5mm}   
+   \begin{subfigure}[b]{0.165\textwidth}
+   \includegraphics[width=\textwidth]{images/emergency/5}
+   \end{subfigure}
+\hspace{-1.5mm}   
+   \begin{subfigure}[b]{0.165\textwidth}
+   \includegraphics[width=\textwidth]{images/emergency/6}
+   \end{subfigure}
+ \hspace{-1.5mm}   
+   \begin{subfigure}[b]{0.165\textwidth}
+   \includegraphics[width=\textwidth]{images/emergency/7}
+   \end{subfigure}
+
+\hspace{-1.5mm}   
+   \begin{subfigure}[b]{0.165\textwidth}
+   \includegraphics[width=\textwidth]{images/emergency/8}
+   \end{subfigure}
+\hspace{-1.5mm}   
+   \begin{subfigure}[b]{0.165\textwidth}
+   \includegraphics[width=\textwidth]{images/emergency/9}
+   \end{subfigure}
+\hspace{-1.5mm}   
+   \begin{subfigure}[b]{0.165\textwidth}
+   \includegraphics[width=\textwidth]{images/emergency/10}
+   \end{subfigure}
+\hspace{-1.5mm}   
+   \begin{subfigure}[b]{0.165\textwidth}
+   \includegraphics[width=\textwidth]{images/emergency/11}
+   \end{subfigure}
+\hspace{-1.5mm}   
+   \begin{subfigure}[b]{0.165\textwidth}
+   \includegraphics[width=\textwidth]{images/emergency/12}
+   \end{subfigure}
+ \hspace{-1.5mm}   
+   \begin{subfigure}[b]{0.165\textwidth}
+   \includegraphics[width=\textwidth]{images/emergency/14}
+   \end{subfigure}
+   
+   \caption{HIJSON visualization examples in the Emergency Department of a general hospital model. The 3D visualization includes furniture and smart devices.}
+   \label{fig:meshes}
+\end{figure*}
 
 %-------------------------------------------------------------------------
 \subsection{Our contribution}
@@ -245,7 +300,7 @@ is the case of the IndoorJSON project~\cite{indoorjson:2013}.
 The focus of this work is the definition of a novel format of cartographic
 documents along with the software ecosystem rooted on it. HIJSON (Hierarchical
 Indoor JSON) is the name chosen for the new document format. Along with the
-accompanying software framework, it aims to realize a mapping between the real
+accompanying software framework (\href{https://github.com/cvdlab/hijson}{https://github.com/cvdlab/hijson}), it aims to realize a mapping between the real
 indoor spaces and a virtual interactive web environment. A simple but
 effective algorithm to find indoor valid routes is also provided.
 
@@ -302,20 +357,6 @@ smart device or a furniture element within a specific building room.
 
 \subsubsection*{Hyperlinked geometric models}
 
-\begin{figure}[h]
- \centering
- \includegraphics[width=\linewidth]{images/sogei2} 
- \caption{Office building: 
- (a) the schematic plan ---made of SVG primitives: 
- lines, rects, polygons--- possibly obtained via a client UI 
- loading engineering design in background;
- (b) the automatically generated LAR cellular complex, transformed 
- server-side into HIJSON; 
- (c and d) the mock-up for the automatically generated 3D HIJSON.
- }
- \label{fig:sogei}
-\end{figure}
-
 The HIJSON document may further import external geometric models, either of
 the buildings themselves or the interior furniture or devices, that are
 topologically complete (in the sense of solid modeling [15]) and very compact.
@@ -358,6 +399,21 @@ The system of building spaces may be characterized as a partially ordered family
 The system of building components, also called \emph{building fabric}, can be partitioned into the  \emph{building envelope} and the \emph{building partitions}.
 The \emph{building envelope} is the physical separator between the conditioned and unconditioned environment of a building, including the resistance to air, water, heat, light, and noise transfer, along to give buildings form, and to provide shelter and security.
 The \emph{building partitions}, either horizontal or vertical, enclose the indoor spaces, and are contained within the building envelope. The former are roofs, floors and ceilings; the latter aim to support the horizontal partitions, either massively or by means of a building frame, where the loads are transferred.
+
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=\linewidth]{images/sogei2} 
+ \caption{Office building: 
+ (a) the schematic plan ---made of SVG primitives: 
+ lines, rects, polygons--- possibly obtained via a client UI 
+ loading engineering design in background;
+ (b) the automatically generated LAR cellular complex, transformed 
+ server-side into HIJSON; 
+ (c and d) the mock-up for the automatically generated 3D HIJSON.
+ }
+ \label{fig:sogei}
+\end{figure}
 
 \subsubsection*{Cellular complexes and sparse matrices} 
 
@@ -996,7 +1052,7 @@ The main limitation of the present approach may be found in the client-side tran
 \paragraph*{Acknowledgments}
 
 We would like to thank the anonimous referees for their valuable comments and suggestions.
-A.P. acknowledges the inspiring cooperation on LAR from Antonio DiCarlo and Vadim Shapiro. Thanks are extended to SOGEI, the ICT company of the Italian Ministry of Economy and Finance, for the support provided through several grants. Giulia Clementi and Cesare Catavitello have developed the virtual environments of the ward department and the emergency department of a general hospital model. 
+A.P. acknowledges the inspiring cooperation on LAR from Antonio DiCarlo and Vadim Shapiro. Thanks are extended to SOGEI, the ICT company of the Italian Ministry of Economy and Finance, for the support provided through several grants. Giulia Clementi and Cesare Catavitello have developed the virtual environments of the ward department and the emergency department of a general hospital model, respectively. 
 
 %-------------------------------------------------------------------------
 
