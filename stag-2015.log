@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.17)  21 SEP 2015 04:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.17)  21 SEP 2015 12:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -840,6 +840,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--81
 [][]$\T1/pcr/m/n/8 http : / / eu . wiley . com / WileyCDA / WileyTitle /
  []
 
+
+Overfull \vbox (3.53545pt too high) has occurred while \output is active []
+
+
 [11 <./images/ward2.png>]
 Underfull \hbox (badness 1681) in paragraph at lines 122--122
 []\T1/ptm/m/sc/8 indoor.io\T1/ptm/m/n/8 :  In-door-j-son spec-i-fi-ca-tion and 
@@ -927,7 +931,7 @@ mf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2014/texmf-dist
 1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on stag-2015.pdf (12 pages, 14588807 bytes).
+Output written on stag-2015.pdf (12 pages, 14588863 bytes).
 PDF statistics:
  670 PDF objects out of 1000 (max. 8388607)
  507 compressed objects within 6 object streams
